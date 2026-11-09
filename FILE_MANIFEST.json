@@ -2,8 +2,8 @@
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 213,
-      "sha256": "2e70d29df7f7d07da3d7f743dece0e82f68f283712d6ec0f5f2cb08dc4eb0e15"
+      "bytes": 80,
+      "sha256": "75ae0632cf709d4eba6365234add9bdd4870d85e57718433bbc88f5b4678eceb"
     },
     {
       "path": ".gitignore",
@@ -3917,5 +3917,5 @@
     }
   ],
   "file_count": 783,
-  "total_bytes": 6984291
+  "total_bytes": 6984158
 }

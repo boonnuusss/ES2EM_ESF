@@ -1,16 +1,2 @@
-* text=auto eol=lf
-
-*.bat text eol=crlf
-*.cmd text eol=crlf
-*.ps1 text eol=crlf
-
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.tif binary
-*.tiff binary
-*.pdf binary
-*.npz binary
-*.npy binary
-*.mat binary
-*.mp4 binary
+# Preserve archived source bytes and SHA256 manifests across platforms.
+* -text
