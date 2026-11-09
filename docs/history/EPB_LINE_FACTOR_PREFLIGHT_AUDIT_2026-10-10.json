@@ -1,0 +1,128 @@
+{
+  "created_local": "2026-10-10T14:08:28.046380+08:00",
+  "passed": true,
+  "source_files_sha256_verified": 89,
+  "rows": [
+    {
+      "name": "B_reference",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.4
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    },
+    {
+      "name": "L10000_fixed_ds",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.4
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    },
+    {
+      "name": "L40000_fixed_ds",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.4
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    },
+    {
+      "name": "VA500_matched",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.2
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    },
+    {
+      "name": "VA500_fixed_S",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.2
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    },
+    {
+      "name": "load_ratio_0p2",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.4
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    },
+    {
+      "name": "load_ratio_5",
+      "initial_density_positive": true,
+      "column_weights_and_three_density_RHS_byte_exact_vs_B": true,
+      "initial_line_RHS_finite": true,
+      "initial_cfl": {
+        "local": 0.016109043463014602,
+        "column": 0.0026595806106342133,
+        "EM_density": 0.0026595806106342133,
+        "line": 0.4
+      },
+      "residual": 0.0,
+      "pairing": 0.0,
+      "effective_gain": 0.0
+    }
+  ],
+  "li_sha256": "04e7db8fe3620d2c4895c7c4890024b6dad129fc4cf45d0f6270268082d799c9",
+  "scope": "initial t0 RHS only, ramp gain zero; does not validate mature active FAC response",
+  "prepared_case": {
+    "name": "L10000_fixed_ds",
+    "configuration_hash": "03edcda4cc46479b43373506c1d223992cf413469a9dfff5d9f2576057648823",
+    "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\line_L10000_li_20261010.json",
+    "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\line_L10000_em_t60_20261010.json",
+    "output_dir": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\line_L10000_x100_y401_k8_three_track_20261010",
+    "status": "configs_prepared_not_launched",
+    "one_way_s": 10.0,
+    "round_trip_s": 20.0,
+    "t_end_s": 60.0,
+    "driver": "<ORIGINAL_CHECKOUT>\\tmp\\run_line_L10000_t60_20261010.py",
+    "driver_syntax_validated": true
+  },
+  "production_started": false
+}

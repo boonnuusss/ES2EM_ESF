@@ -1,0 +1,545 @@
+{
+  "format": "esf_em_growth_acceptance_v2",
+  "run_dir": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\unique_periodic_200x401_k8_three_track_20261006",
+  "stage": {
+    "name": "60",
+    "nominal_target_s": 60.0,
+    "requested_end_s": 60.0,
+    "completed_time_s": 60.0
+  },
+  "policy": {
+    "density_cfl": {
+      "warning": 0.24,
+      "failure": 0.2500001
+    },
+    "coupled_cfl": {
+      "warning": 0.38,
+      "failure": 0.4000001
+    },
+    "relative_residual": {
+      "warning": 1e-10,
+      "failure": 1e-08
+    },
+    "power_pairing_defect": {
+      "warning": 1e-10,
+      "failure": 1e-08
+    },
+    "net_surface_current_ratio": {
+      "warning": 1e-12,
+      "failure": 1e-10
+    },
+    "periodic_endpoint_relative_mismatch": {
+      "warning": 1e-10,
+      "failure": 1e-06
+    },
+    "line_energy_budget": {
+      "maximum_creation_fraction": 0.005,
+      "dissipation_warning_fraction": 0.05
+    },
+    "fac_to_gravity_ratio": {
+      "preferred": [
+        0.05,
+        0.7
+      ],
+      "failure": [
+        0.02,
+        0.85
+      ]
+    },
+    "minimum_dt_s": {
+      "60": {
+        "warning": 0.25,
+        "failure": 0.125
+      },
+      "300": {
+        "warning": 0.125,
+        "failure": 0.03125
+      },
+      "3150": {
+        "warning": 0.0625,
+        "failure": 0.015625
+      }
+    },
+    "early_growth": {
+      "late_window_s": 100.0,
+      "minimum_column_em_rate_s_inv": -0.0002,
+      "relative_l2_failure": 0.0001,
+      "relative_l2_preferred": 0.001
+    },
+    "mature_growth": {
+      "minimum_positive_window_s": 300.0,
+      "minimum_rate_s_inv": 0.0001,
+      "preferred_rate_s_inv": 0.0002,
+      "minimum_final_to_minimum_amplitude": 2.0,
+      "minimum_em_to_column_positive_rate_ratio": 0.3,
+      "relative_l2_failure": 0.005,
+      "relative_l2_preferred": 0.01
+    },
+    "bubble": {
+      "depletion_threshold": 0.25,
+      "minimum_top_km": 430.0,
+      "preferred_top_km": 450.0,
+      "minimum_span_km": 80.0,
+      "preferred_span_km": 100.0,
+      "minimum_area_km2": 500.0,
+      "minimum_maximum_depletion": 0.5,
+      "minimum_two_cell_width_layers": 10
+    }
+  },
+  "inputs": {
+    "report": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\unique_periodic_200x401_k8_three_track_20261006\\em_growth_report.json",
+    "diagnostics": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\unique_periodic_200x401_k8_three_track_20261006\\diagnostics.jsonl",
+    "final_states": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\unique_periodic_200x401_k8_three_track_20261006\\final_states.npz",
+    "history_source": "checkpoint_schema_v3",
+    "diagnostic_records": 60
+  },
+  "grid": {
+    "nx_archived": 200,
+    "ny": 401,
+    "nx_unique": 200,
+    "dx_km": 1.25,
+    "dy_km": 1.0,
+    "periodic_endpoint_duplicate_removed": false,
+    "periodic_x_layout": "unique_periodic_cells",
+    "computational_period_x_km": 250.0,
+    "periodic_endpoint_relative_mismatch": {
+      "local_es": null,
+      "column_es": null,
+      "column_em": null
+    }
+  },
+  "numerical_health": {
+    "minimum_dt_s": 0.25,
+    "maximum_baseline_cfl": 0.016042884166050264,
+    "maximum_column_control_cfl": 0.002661354557734652,
+    "maximum_coupled_cfl": 0.4,
+    "maximum_baseline_potential_relative_residual": 5.418175531524226e-13,
+    "maximum_column_control_potential_relative_residual": 5.222276743471242e-13,
+    "maximum_coupled_potential_relative_residual": 6.720588479633116e-13,
+    "maximum_coupling_relative_residual": 6.720588479633116e-13,
+    "minimum_densities_m3": {
+      "local_es": 15289847.775300892,
+      "column_es": 15289847.774645373,
+      "column_em": 15289847.803776873
+    },
+    "all_final_density_values_finite": true,
+    "dt_reductions": 0
+  },
+  "column_particle_budget": {
+    "maximum_absolute_local_es_content_relative_change": 9.727795041558629e-05,
+    "maximum_absolute_column_es_content_relative_change": 9.383994960043829e-05,
+    "maximum_absolute_column_em_content_relative_change": 7.175955368277087e-05,
+    "balance_status": "not_evaluable_without_vertical_boundary_flux_history",
+    "is_acceptance_gate": false,
+    "reason": "periodic_y=False archives allow physical top/bottom advective flux; raw domain-content drift is not a conservation residual"
+  },
+  "fac_and_power": {
+    "fac_to_gravity_ratio_active_median": 0.24260243138646626,
+    "fac_to_gravity_ratio_active_maximum": 0.2427647805699861,
+    "maximum_abs_surface_fac_a_m2": 8.794075638659884e-09,
+    "maximum_abs_net_surface_current_a": 6.776263578034403e-14,
+    "net_surface_current_to_max_domain_current_ratio": 7.736658183565021e-17,
+    "surface_fac_balance": {
+      "evaluable": true,
+      "reason": null,
+      "normalization": "max_abs_times_computational_area_proxy",
+      "normalizations_used": [
+        "max_abs_times_computational_area_proxy"
+      ],
+      "record_count": 60,
+      "maximum_ratio": 7.736658183565021e-17
+    },
+    "maximum_relative_power_pairing_defect": 5.935300506481319e-16,
+    "remote_absorbed_energy_j": 52130.49922214764,
+    "integrated_absolute_ionosphere_port_power_j": 88644.85747986456,
+    "remote_absorption_fraction_of_absolute_port_energy": 0.5880826108157368,
+    "minimum_remote_power_w": 0.0,
+    "maximum_abs_remote_reflection_coefficient": 0.0,
+    "line_energy_budget": {
+      "evaluable": true,
+      "reason": null,
+      "verification_level": "physical_energy_with_sampled_port_quadrature",
+      "characteristic_energy_formula_exact": true,
+      "discrete_ssprk_stage_power_integral_archived": false,
+      "port_work_quadrature": "trapezoidal_representative_stage_samples",
+      "initial_line_energy_j": 0.0,
+      "final_line_energy_j": 36509.49783320201,
+      "line_energy_change_j": 36509.49783320201,
+      "net_boundary_work_j": 36514.386989396444,
+      "remote_absorbed_energy_j": 52130.499222147635,
+      "work_minus_energy_j": 4.889156194432871,
+      "relative_work_minus_energy": 9.37868669470887e-05,
+      "numerical_energy_creation_fraction": 0.0,
+      "numerical_dissipation_fraction": 9.37868669470887e-05,
+      "sample_count_including_t0": 61
+    }
+  },
+  "growth": {
+    "local_es": {
+      "archived_fit_window": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": -0.0004244204163548361,
+        "r_squared": 0.9966199003910151
+      },
+      "late_100s_fit": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": -0.0004244204163548361,
+        "r_squared": 0.9966199003910151
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 60.0,
+        "minimum_amplitude_m3": 39056911154.57818,
+        "final_amplitude_m3": 39056911154.57818,
+        "final_to_minimum_amplitude": 1.0,
+        "window": {
+          "sample_count": 1,
+          "start_s": 60.0,
+          "end_s": 60.0,
+          "duration_s": 0.0,
+          "rate_s_inv": null,
+          "r_squared": null
+        }
+      }
+    },
+    "column_es": {
+      "archived_fit_window": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.00040387601052700137,
+        "r_squared": 0.9999804415633258
+      },
+      "late_100s_fit": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.00040387601052700137,
+        "r_squared": 0.9999804415633258
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 0.0,
+        "minimum_amplitude_m3": 40066735464.423225,
+        "final_amplitude_m3": 41049504287.86429,
+        "final_to_minimum_amplitude": 1.024528297902226,
+        "window": {
+          "sample_count": 241,
+          "start_s": 0.0,
+          "end_s": 60.0,
+          "duration_s": 60.0,
+          "rate_s_inv": 0.00040387601052700137,
+          "r_squared": 0.9999804415633258
+        }
+      }
+    },
+    "column_em": {
+      "archived_fit_window": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.0003122592451961115,
+        "r_squared": 0.9986667810681905
+      },
+      "late_100s_fit": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.0003122592451961115,
+        "r_squared": 0.9986667810681905
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 0.0,
+        "minimum_amplitude_m3": 40066735464.423225,
+        "final_amplitude_m3": 40845806952.7782,
+        "final_to_minimum_amplitude": 1.0194443465214864,
+        "window": {
+          "sample_count": 241,
+          "start_s": 0.0,
+          "end_s": 60.0,
+          "duration_s": 60.0,
+          "rate_s_inv": 0.0003122592451961115,
+          "r_squared": 0.9986667810681905
+        }
+      }
+    }
+  },
+  "relative_l2": {
+    "column_es_vs_local_es": 0.005332297872519246,
+    "column_em_vs_column_es": 0.0005663240633580085,
+    "column_em_vs_local_es": 0.0053206418034595256
+  },
+  "morphology": {
+    "local_es": {
+      "exists": false,
+      "depletion_threshold": 0.25,
+      "component_count": 0,
+      "cell_count": 0,
+      "bottom_km": null,
+      "top_km": null,
+      "vertical_span_km": 0.0,
+      "area_km2": 0.0,
+      "maximum_depletion": 0.14136035860907215,
+      "maximum_width_cells": 0,
+      "maximum_width_km": 0.0,
+      "width_layer_count": 0,
+      "layers_at_least_two_cells_wide": 0
+    },
+    "column_es": {
+      "exists": false,
+      "depletion_threshold": 0.25,
+      "component_count": 0,
+      "cell_count": 0,
+      "bottom_km": null,
+      "top_km": null,
+      "vertical_span_km": 0.0,
+      "area_km2": 0.0,
+      "maximum_depletion": 0.13927478299695673,
+      "maximum_width_cells": 0,
+      "maximum_width_km": 0.0,
+      "width_layer_count": 0,
+      "layers_at_least_two_cells_wide": 0
+    },
+    "column_em": {
+      "exists": false,
+      "depletion_threshold": 0.25,
+      "component_count": 0,
+      "cell_count": 0,
+      "bottom_km": null,
+      "top_km": null,
+      "vertical_span_km": 0.0,
+      "area_km2": 0.0,
+      "maximum_depletion": 0.11194142910382288,
+      "maximum_width_cells": 0,
+      "maximum_width_km": 0.0,
+      "width_layer_count": 0,
+      "layers_at_least_two_cells_wide": 0
+    }
+  },
+  "checks": [
+    {
+      "name": "three_track_schema",
+      "status": "pass",
+      "value": {
+        "format": "esf_dimensional_em_growth_v2",
+        "tracks": "local_column_em"
+      },
+      "criterion": "v2 and comparison_tracks=local_column_em",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "physical_parallel_column",
+      "status": "pass",
+      "value": {
+        "profile": "dipole_chapman_flux_tube",
+        "constant_length_km": null
+      },
+      "criterion": "dipole_chapman_flux_tube with no constant H_parallel",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "surface_fac_representation",
+      "status": "pass",
+      "value": "surface_current",
+      "criterion": "surface_current",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "matched_remote_boundary",
+      "status": "pass",
+      "value": {
+        "model": "matched",
+        "reflection": 0.0
+      },
+      "criterion": "matched and |R| <= 1e-12",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "unit_feedback_gain",
+      "status": "pass",
+      "value": 1.0,
+      "criterion": "feedback_gain = 1 (not a weakened diagnostic coupling)",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "deterministic_density_initialization",
+      "status": "pass",
+      "value": {
+        "relative_noise": 0.0,
+        "line_seed_v": 0.0
+      },
+      "criterion": "no random density noise and no explicit line seed",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "completed_requested_time",
+      "status": "pass",
+      "value": {
+        "final_time_s": 60.0,
+        "requested_time_s": 60.0
+      },
+      "criterion": "final_time equals requested_time",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "local_es_cfl",
+      "status": "pass",
+      "value": 0.016042884166050264,
+      "criterion": "<= 0.24",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "column_es_cfl",
+      "status": "pass",
+      "value": 0.002661354557734652,
+      "criterion": "<= 0.24",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "column_em_combined_cfl",
+      "status": "warning",
+      "value": 0.4,
+      "criterion": "preferred <= 0.38",
+      "message": "near limit"
+    },
+    {
+      "name": "maximum_baseline_potential_relative_residual",
+      "status": "pass",
+      "value": 5.418175531524226e-13,
+      "criterion": "<= 1e-10",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "maximum_column_control_potential_relative_residual",
+      "status": "pass",
+      "value": 5.222276743471242e-13,
+      "criterion": "<= 1e-10",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "maximum_coupled_potential_relative_residual",
+      "status": "pass",
+      "value": 6.720588479633116e-13,
+      "criterion": "<= 1e-10",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "maximum_coupling_relative_residual",
+      "status": "pass",
+      "value": 6.720588479633116e-13,
+      "criterion": "<= 1e-10",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "positive_finite_density",
+      "status": "pass",
+      "value": {
+        "local_es": 15289847.775300892,
+        "column_es": 15289847.774645373,
+        "column_em": 15289847.803776873
+      },
+      "criterion": "all finite and strictly positive",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "net_surface_current_balance_proxy",
+      "status": "pass",
+      "value": 7.736658183565021e-17,
+      "criterion": "<= 1e-12",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "modal_grid_power_pairing",
+      "status": "pass",
+      "value": 5.935300506481319e-16,
+      "criterion": "<= 1e-10",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "passive_remote_absorption",
+      "status": "pass",
+      "value": {
+        "absorbed_energy_j": 52130.49922214764,
+        "minimum_power_w": 0.0,
+        "negative_power_tolerance_w": 1.8265457507443594e-07,
+        "negative_energy_tolerance_j": 8.864485747986456e-06
+      },
+      "criterion": "matched-terminal power is nonnegative record-by-record and in integral",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "line_energy_budget",
+      "status": "pass",
+      "value": {
+        "evaluable": true,
+        "reason": null,
+        "verification_level": "physical_energy_with_sampled_port_quadrature",
+        "characteristic_energy_formula_exact": true,
+        "discrete_ssprk_stage_power_integral_archived": false,
+        "port_work_quadrature": "trapezoidal_representative_stage_samples",
+        "initial_line_energy_j": 0.0,
+        "final_line_energy_j": 36509.49783320201,
+        "line_energy_change_j": 36509.49783320201,
+        "net_boundary_work_j": 36514.386989396444,
+        "remote_absorbed_energy_j": 52130.499222147635,
+        "work_minus_energy_j": 4.889156194432871,
+        "relative_work_minus_energy": 9.37868669470887e-05,
+        "numerical_energy_creation_fraction": 0.0,
+        "numerical_dissipation_fraction": 9.37868669470887e-05,
+        "sample_count_including_t0": 61
+      },
+      "criterion": "no net energy creation within sampled-power tolerance",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "fac_to_gravity_ratio",
+      "status": "pass",
+      "value": 0.24260243138646626,
+      "criterion": "active median in [0.05, 0.70]",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "column_content_balance",
+      "status": "warning",
+      "value": {
+        "maximum_absolute_local_es_content_relative_change": 9.727795041558629e-05,
+        "maximum_absolute_column_es_content_relative_change": 9.383994960043829e-05,
+        "maximum_absolute_column_em_content_relative_change": 7.175955368277087e-05,
+        "balance_status": "not_evaluable_without_vertical_boundary_flux_history",
+        "is_acceptance_gate": false,
+        "reason": "periodic_y=False archives allow physical top/bottom advective flux; raw domain-content drift is not a conservation residual"
+      },
+      "criterion": "archive top/bottom flux and close the discrete column-content budget",
+      "message": "raw content drift is diagnostic only for an open vertical boundary"
+    },
+    {
+      "name": "minimum_dt",
+      "status": "pass",
+      "value": 0.25,
+      "criterion": ">= 0.25 s",
+      "message": "criterion satisfied"
+    },
+    {
+      "name": "no_60s_dt_reduction",
+      "status": "pass",
+      "value": 0,
+      "criterion": "zero macro-step reductions",
+      "message": "criterion satisfied"
+    }
+  ],
+  "pass": true,
+  "failures": [],
+  "warnings": [
+    "near limit [column_em_combined_cfl]",
+    "raw content drift is diagnostic only for an open vertical boundary [column_content_balance]"
+  ],
+  "interpretation": "stage gates passed"
+}

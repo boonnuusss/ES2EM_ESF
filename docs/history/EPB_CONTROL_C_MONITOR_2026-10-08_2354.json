@@ -1,0 +1,42 @@
+{
+  "checked_at_local": "2026-10-08T23:54:48.175963+08:00",
+  "result": "terminal_requires_review",
+  "processes": [],
+  "checkpoint": {
+    "time_s": 3150.0,
+    "step": 12600,
+    "schema_version": 3,
+    "configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+    "all_float_arrays_finite": true,
+    "density_minima_m3": {
+      "baseline_density_m3": 15289887.308499953,
+      "column_control_density_m3": 8599637.746796245,
+      "coupled_density_m3": 14434426.286895165
+    }
+  },
+  "diagnostics_latest_time_s": 3150.0,
+  "diagnostic_count": 3150,
+  "maxima": {
+    "dt_reductions": 0,
+    "coupling_relative_residual": 5.985239418293457e-13,
+    "relative_power_pairing_defect": 9.49982288235761e-16,
+    "baseline_cfl": 0.24998707688846178,
+    "column_control_cfl": 0.2498157969833443,
+    "coupled_cfl": 0.4
+  },
+  "latest_dt_s": 0.25,
+  "latest_es_substeps": [
+    4,
+    4
+  ],
+  "latest_es_substep_dt_s": [
+    0.0625,
+    0.0625
+  ],
+  "stderr_empty": true,
+  "anomalies": [],
+  "terminal_audit_exists": true,
+  "acceptance_t3150_exists": true,
+  "next_action": "Continue sole driver, no duplicate launch; next check at least30 minutes later. At terminal review strict acceptance and image QA; preserve all archives.",
+  "process_record_correction": "CIM returned no Python; empty pipeline left stale intermediate file. Corrected from actual current CIM response."
+}

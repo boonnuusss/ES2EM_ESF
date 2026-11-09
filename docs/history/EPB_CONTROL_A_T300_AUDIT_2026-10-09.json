@@ -1,0 +1,56 @@
+{
+  "checked_local": "2026-10-09T04:25:20.270190+08:00",
+  "passed": true,
+  "time_s": 300,
+  "step": 1200,
+  "configuration_hash": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+  "terminal_arrays_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 2,
+  "visual_qa_done": true,
+  "finding": "Early smooth perturbation, no clear Y, image rendered correctly.",
+  "comparison": {
+    "common_nodes": "A native nodes equal every2nd C x node; ny401/250km period/FAC4,4 fixed.",
+    "spatial": {
+      "baseline_density_m3": {
+        "density_relative_l2_A_vs_C": 1.1744721973939828e-05,
+        "structure_relative_l2_A_vs_C": 0.00017455653949981976
+      },
+      "column_control_density_m3": {
+        "density_relative_l2_A_vs_C": 1.047617776707094e-05,
+        "structure_relative_l2_A_vs_C": 0.00013012272772845352
+      },
+      "coupled_density_m3": {
+        "density_relative_l2_A_vs_C": 7.357638315612319e-06,
+        "structure_relative_l2_A_vs_C": 9.435677676685752e-05
+      }
+    },
+    "growth_window_s": [
+      200,
+      300
+    ],
+    "growth": {
+      "baseline_density_m3": {
+        "A_gamma_s_inverse": 6.033710816214187e-06,
+        "C_gamma_s_inverse": 6.2528478039033805e-06,
+        "A_relative_to_C": -0.035045949391634856
+      },
+      "column_control_density_m3": {
+        "A_gamma_s_inverse": 0.0004520794933801914,
+        "C_gamma_s_inverse": 0.0004524400328658485,
+        "A_relative_to_C": -0.0007968779494895717
+      },
+      "coupled_density_m3": {
+        "A_gamma_s_inverse": 0.00032573001984345776,
+        "C_gamma_s_inverse": 0.0003259830925231574,
+        "A_relative_to_C": -0.0007763368269833038
+      }
+    }
+  },
+  "limitations": [
+    "A single-thread versus historical C10-thread is an additional numerical confound.",
+    "Two resolutions and early-stage agreement do not prove asymptotic convergence or mature Y causality."
+  ]
+}

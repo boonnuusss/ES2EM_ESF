@@ -1,0 +1,46 @@
+{
+  "checked_at_local": "2026-10-07T03:49:21.837383+08:00",
+  "result": "running_stable",
+  "processes": [
+    {
+      "ProcessId": 21148,
+      "CommandLine": "\"C:\\Users\\12928\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u <ORIGINAL_CHECKOUT>/tmp/run_em_unique_periodic_t3150_20261006.py"
+    }
+  ],
+  "checkpoint": {
+    "time_s": 1575.0,
+    "step": 6300,
+    "schema_version": 3,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "all_float_arrays_finite": true,
+    "density_minima_m3": {
+      "baseline_density_m3": 15289849.647119356,
+      "column_control_density_m3": 13516039.386900343,
+      "coupled_density_m3": 15307079.328100726
+    }
+  },
+  "diagnostics_latest_time_s": 1594.0,
+  "diagnostic_count": 1594,
+  "maxima": {
+    "dt_reductions": 0,
+    "coupling_relative_residual": 6.750968393705431e-13,
+    "relative_power_pairing_defect": 8.603603701604781e-16,
+    "baseline_cfl": 0.016042884166050264,
+    "column_control_cfl": 0.01473490015766281,
+    "coupled_cfl": 0.4
+  },
+  "latest_dt_s": 0.25,
+  "latest_es_substeps": [
+    1,
+    1
+  ],
+  "latest_es_substep_dt_s": [
+    0.25,
+    0.25
+  ],
+  "stderr_empty": true,
+  "anomalies": [],
+  "terminal_audit_exists": false,
+  "acceptance_t3150_exists": false,
+  "next_action": "Continue sole driver, no duplicate launch; next check at least30 minutes later. At terminal review strict acceptance and image QA; preserve all archives."
+}

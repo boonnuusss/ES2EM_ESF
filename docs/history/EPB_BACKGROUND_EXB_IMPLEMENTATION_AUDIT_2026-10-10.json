@@ -1,0 +1,50 @@
+{
+  "updated_local": "2026-10-10T09:13:55.187199+08:00",
+  "implemented": true,
+  "parameter": "background_exb_y_m_s",
+  "units": "m/s",
+  "positive_direction": "+y upward",
+  "default": 0.0,
+  "scope": "imposed common density drift only, no background-current polarization closure",
+  "hashes": {
+    "A": {
+      "zero": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+      "10_m_s": "62fc39cdff7ee0b35de962defc9fd2836887d6d758090f4d5ea43e9e9b029e62",
+      "20_m_s": "39d6cca9f1ae0c8721917765439600dc160d0e52745684ffac8e40eb404ead75"
+    },
+    "B": {
+      "zero": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+      "10_m_s": "1335857f3822d56dd2ad91a0839e912dd117948cf969e9b0bb34487868997706",
+      "20_m_s": "23d26c9064df2d3cbb426b43f7a43966f3a58410f5ba944f0fd417946f625076"
+    },
+    "C": {
+      "zero": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+      "10_m_s": "baa2964f0c72bfb179fb5f0944fd17a6952edff4ba12c89dfc53c0280fdb7ff5",
+      "20_m_s": "910a6aaaea458ade7250a8a9cf652b557b61160aa4d62dcb63037272678fc6d9"
+    }
+  },
+  "source_files": 89,
+  "changed_source": [
+    "esf_sim/bidirectional_em.py",
+    "esf_sim/em_growth.py"
+  ],
+  "source_manifest": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_source_20261010_sha256.json",
+  "source_zip": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_source_20261010.zip",
+  "tests": {
+    "passed": 14,
+    "command": "pytest tests/test_background_exb.py tests/test_bidirectional_em.py::test_gain_zero_rhs_and_ssprk3_are_exact_legacy_density_branch",
+    "checks": [
+      "finite parameter validation",
+      "0/-0 hash compatibility and nonzero hash separation",
+      "local ES zero RHS/SSPRK byte exact",
+      "upward/downward analytic local and column transport",
+      "constant conserved column interior",
+      "periodic x translation equivariance",
+      "density CFL and nonzero local SSPRK rejection",
+      "0/10/20 tiny three-track .02 to .04s resume",
+      "changed drift checkpoint rejection"
+    ]
+  },
+  "production_started": false,
+  "next_action": "Review implementation diff and prepare isolated short-stage drift sensitivity plans with fixed load/length/VA, original Li settings and single-thread provenance; no repeated completed trajectory."
+}

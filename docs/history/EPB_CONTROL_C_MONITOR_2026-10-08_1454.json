@@ -1,0 +1,25 @@
+{
+  "checked_local": "2026-10-08T14:55:29.231691+08:00",
+  "checkpoint_time_s": 275.0,
+  "step": 1100,
+  "schema_version": 3,
+  "hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+  "hash_matches": true,
+  "dt_reductions": 0,
+  "finite_arrays": true,
+  "density_minima_m3": {
+    "baseline_density_m3": 15289847.805680195,
+    "column_control_density_m3": 15289847.802244833,
+    "coupled_density_m3": 15241646.942250231
+  },
+  "diagnostic_maxima": {
+    "coupling_relative_residual": 5.92617151094983e-13,
+    "relative_power_pairing_defect": 6.238688969170232e-16,
+    "baseline_cfl": 0.016042884166050236,
+    "column_control_cfl": 0.002661354557734656,
+    "coupled_cfl": 0.4
+  },
+  "latest_diagnostic_time_s": 276.0,
+  "active_driver_command_verified": true,
+  "stderr_empty": true
+}

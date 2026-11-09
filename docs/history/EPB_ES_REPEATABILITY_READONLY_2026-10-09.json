@@ -1,0 +1,101 @@
+{
+  "checked_local": "2026-10-09T00:25:22.108620+08:00",
+  "method": "Read-only completed archived diagnostics and source inspection; no trajectory advanced.",
+  "runs": {
+    "C": {
+      "rows": 3150,
+      "time_range": [
+        1.0,
+        3150.0
+      ],
+      "report_subcycling": {
+        "baseline_subcycling": {
+          "enabled": true,
+          "activation": "baseline_density_cfl_only",
+          "events": 2632,
+          "extra_baseline_steps": 5008,
+          "subcycled_macro_steps": 2632
+        },
+        "column_control_subcycling": {
+          "enabled": true,
+          "activation": "column_control_density_cfl_only",
+          "events": 2763,
+          "extra_column_control_steps": 5557,
+          "subcycled_macro_steps": 2763
+        }
+      },
+      "diagnostic_subcycles": {
+        "local_es": {
+          "sampled_event_count": 658,
+          "first_sampled_time_s": 2493.0,
+          "max_sampled_substeps": 4
+        },
+        "column_es": {
+          "sampled_event_count": 691,
+          "first_sampled_time_s": 2460.0,
+          "max_sampled_substeps": 8
+        }
+      }
+    },
+    "D": {
+      "rows": 3150,
+      "time_range": [
+        1.0,
+        3150.0
+      ],
+      "report_subcycling": {
+        "baseline_subcycling": {
+          "enabled": true,
+          "activation": "baseline_density_cfl_only",
+          "events": 2632,
+          "extra_baseline_steps": 5008,
+          "subcycled_macro_steps": 2632
+        },
+        "column_control_subcycling": {
+          "enabled": true,
+          "activation": "column_control_density_cfl_only",
+          "events": 2763,
+          "extra_column_control_steps": 9071,
+          "subcycled_macro_steps": 2763
+        }
+      },
+      "diagnostic_subcycles": {
+        "local_es": {
+          "sampled_event_count": 658,
+          "first_sampled_time_s": 2493.0,
+          "max_sampled_substeps": 4
+        },
+        "column_es": {
+          "sampled_event_count": 691,
+          "first_sampled_time_s": 2460.0,
+          "max_sampled_substeps": 16
+        }
+      }
+    }
+  },
+  "matched_diagnostic_steps": 3150,
+  "time_step_comparison": {
+    "baseline_substeps": {
+      "mismatched_sample_count": 0,
+      "first": null
+    },
+    "column_control_substeps": {
+      "mismatched_sample_count": 220,
+      "first": {
+        "step": 11244,
+        "time_s": 2811.0,
+        "C": 2,
+        "D": 4
+      }
+    },
+    "dt_s": {
+      "mismatched_sample_count": 0,
+      "first": null
+    }
+  },
+  "source_path": "<ORIGINAL_CHECKOUT>/src/esf_sim/bidirectional_em.py",
+  "source_observation": "evaluate_column_es_rhs calls unforced gravity column geometry solve, without FAC basis projection; ES independently uses dyadic density-CFL subcycling.",
+  "conclusion": "Subcycling disagreements at common samples, if present, are numerical trajectory differences rather than intended FAC physics in zero-FAC ES controls. They do not alone establish which perturbation initiated divergence.",
+  "provenance_limit": "Exact per-run MKL/PARDISO thread/runtime and dirty source snapshots are not established by configuration hashes; historical runtime equality must not be assumed.",
+  "next": "Review onset against saved snapshots and solver/environment provenance; define numerical-repeatability control without rerunning forbidden production tracks."
+}

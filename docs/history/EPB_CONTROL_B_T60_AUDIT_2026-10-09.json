@@ -1,0 +1,28 @@
+{
+  "checked_local": "2026-10-09T10:38:13.252731+08:00",
+  "passed": true,
+  "time_s": 60,
+  "step": 240,
+  "configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+  "terminal_arrays_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 2,
+  "visual_qa_done": true,
+  "finding": "Early smooth three-track perturbation; no mature bifurcation conclusion.",
+  "same_grid_single_thread_A_comparison": {
+    "baseline_density_m3": {
+      "byte_exact_B_vs_A": true,
+      "structure_relative_l2_B_vs_A": 0.0
+    },
+    "column_control_density_m3": {
+      "byte_exact_B_vs_A": true,
+      "structure_relative_l2_B_vs_A": 0.0
+    },
+    "coupled_density_m3": {
+      "byte_exact_B_vs_A": false,
+      "structure_relative_l2_B_vs_A": 0.000224005023425597
+    }
+  }
+}

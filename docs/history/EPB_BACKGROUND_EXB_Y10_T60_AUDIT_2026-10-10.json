@@ -1,0 +1,63 @@
+{
+  "checked_local": "2026-10-10T11:08:46.785260+08:00",
+  "passed": true,
+  "drift_y_m_s": 10,
+  "time_s": 60,
+  "step": 240,
+  "configuration_hash": "2fc21197d5a2a30fc4e3f1bbf06b60951106956ec41d7b82d62e8bb9b933f527",
+  "finite_positive": true,
+  "terminal_density_arrays_byte_exact": true,
+  "terminal_line_arrays_byte_exact": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 2,
+  "visual_qa_done": true,
+  "qa_finding": "smooth early density maps and readable three-track curves, no mature bifurcation inference",
+  "comparison_vs_zero": {
+    "baseline_density_m3": {
+      "density_relative_l2": 0.006049030605863628,
+      "horizontal_structure_relative_l2": 0.006280238188838807,
+      "gamma_drift_s_inverse": -0.0003942335281679581,
+      "gamma_zero_s_inverse": -0.00039243112620523745,
+      "growth_window_s": [
+        20,
+        60
+      ],
+      "gamma_difference_s_inverse": -1.802401962720671e-06
+    },
+    "column_control_density_m3": {
+      "density_relative_l2": 0.007664620409222411,
+      "horizontal_structure_relative_l2": 0.007609839706653099,
+      "gamma_drift_s_inverse": 0.000323229662787636,
+      "gamma_zero_s_inverse": 0.0004058784302823924,
+      "growth_window_s": [
+        20,
+        60
+      ],
+      "gamma_difference_s_inverse": -8.264876749475639e-05
+    },
+    "coupled_density_m3": {
+      "density_relative_l2": 0.007665101421910341,
+      "horizontal_structure_relative_l2": 0.00765689234016847,
+      "gamma_drift_s_inverse": 0.00021888325103737276,
+      "gamma_zero_s_inverse": 0.0003022244741147432,
+      "growth_window_s": [
+        20,
+        60
+      ],
+      "gamma_difference_s_inverse": -8.334122307737045e-05
+    },
+    "pure_EM": {
+      "difference_relative_l2": 0.009507418570869933
+    },
+    "geometry": {
+      "difference_relative_l2": 0.9428301389542653
+    }
+  },
+  "limitations": [
+    "20\u201360s early interpolated logRMS slope is not mature growth rate",
+    "background drift changes ES and geometry controls too; pure EM field is a difference, not drift-only effect",
+    "imposed density transport only, no background-current closure",
+    "open vertical boundaries; no closed-system particle conservation claim"
+  ]
+}

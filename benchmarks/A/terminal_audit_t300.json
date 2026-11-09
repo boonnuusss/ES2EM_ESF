@@ -1,0 +1,9 @@
+{
+  "passed": true,
+  "time_s": 300,
+  "configuration_hash": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+  "step": 1200,
+  "terminal_arrays_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0
+}

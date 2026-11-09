@@ -1,0 +1,391 @@
+{
+  "format": "es2em_reproduction_cases_v1",
+  "cases": {
+    "A": {
+      "li": "configs/reproduction/A_li.json",
+      "em": "configs/reproduction/A_em.json",
+      "stages_s": [
+        60,
+        300,
+        3150
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        4,
+        4
+      ],
+      "source_directory": "source_history/matched_period_AB_source_20261009",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/A/acceptance_t300.json",
+          "pass": true,
+          "stage": {
+            "name": "300",
+            "nominal_target_s": 300.0,
+            "requested_end_s": 300.0,
+            "completed_time_s": 300.0
+          }
+        },
+        {
+          "path": "benchmarks/A/acceptance_t3150.json",
+          "pass": true,
+          "stage": {
+            "name": "3150",
+            "nominal_target_s": 3150.0,
+            "requested_end_s": 3150.0,
+            "completed_time_s": 3150.0
+          }
+        },
+        {
+          "path": "benchmarks/A/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "B": {
+      "li": "configs/reproduction/B_li.json",
+      "em": "configs/reproduction/B_em.json",
+      "stages_s": [
+        60,
+        300,
+        3150
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "source_history/matched_period_AB_source_20261009",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/B/acceptance_t300.json",
+          "pass": true,
+          "stage": {
+            "name": "300",
+            "nominal_target_s": 300.0,
+            "requested_end_s": 300.0,
+            "completed_time_s": 300.0
+          }
+        },
+        {
+          "path": "benchmarks/B/acceptance_t3150.json",
+          "pass": true,
+          "stage": {
+            "name": "3150",
+            "nominal_target_s": 3150.0,
+            "requested_end_s": 3150.0,
+            "completed_time_s": 3150.0
+          }
+        },
+        {
+          "path": "benchmarks/B/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "C": {
+      "li": "configs/reproduction/C_li.json",
+      "em": "configs/reproduction/C_em.json",
+      "stages_s": [
+        60,
+        300,
+        3150
+      ],
+      "grid_points": [
+        200,
+        401
+      ],
+      "fac_cutoff": [
+        4,
+        4
+      ],
+      "source_directory": "src",
+      "source_identity": "current source; exact historical source snapshot unavailable",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/C/acceptance_t300.json",
+          "pass": true,
+          "stage": {
+            "name": "300",
+            "nominal_target_s": 300.0,
+            "requested_end_s": 300.0,
+            "completed_time_s": 300.0
+          }
+        },
+        {
+          "path": "benchmarks/C/acceptance_t3150.json",
+          "pass": true,
+          "stage": {
+            "name": "3150",
+            "nominal_target_s": 3150.0,
+            "requested_end_s": 3150.0,
+            "completed_time_s": 3150.0
+          }
+        },
+        {
+          "path": "benchmarks/C/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "D": {
+      "li": "configs/reproduction/D_li.json",
+      "em": "configs/reproduction/D_em.json",
+      "stages_s": [
+        60,
+        300,
+        3150,
+        5000
+      ],
+      "grid_points": [
+        200,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "src",
+      "source_identity": "current source; exact historical source snapshot unavailable",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/D/acceptance_t300.json",
+          "pass": true,
+          "stage": {
+            "name": "300",
+            "nominal_target_s": 300.0,
+            "requested_end_s": 300.0,
+            "completed_time_s": 300.0
+          }
+        },
+        {
+          "path": "benchmarks/D/acceptance_t3150.json",
+          "pass": true,
+          "stage": {
+            "name": "3150",
+            "nominal_target_s": 3150.0,
+            "requested_end_s": 3150.0,
+            "completed_time_s": 3150.0
+          }
+        },
+        {
+          "path": "benchmarks/D/acceptance_t5000.json",
+          "pass": true,
+          "stage": {
+            "name": "3150",
+            "nominal_target_s": 3150.0,
+            "requested_end_s": 5000.0,
+            "completed_time_s": 5000.0
+          }
+        },
+        {
+          "path": "benchmarks/D/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "exb10": {
+      "li": "configs/reproduction/exb10_li.json",
+      "em": "configs/reproduction/exb10_em.json",
+      "stages_s": [
+        60
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "source_history/acceptance_exb_source_v3_20261010/src",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/exb10/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "2fc21197d5a2a30fc4e3f1bbf06b60951106956ec41d7b82d62e8bb9b933f527",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "exb20": {
+      "li": "configs/reproduction/exb20_li.json",
+      "em": "configs/reproduction/exb20_em.json",
+      "stages_s": [
+        60
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "source_history/acceptance_exb_source_v3_20261010/src",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/exb20/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "fdafd006233807f6aa30f885b467753011e5fb260f7cfd71731bbcc5b3bc9112",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "line10000": {
+      "li": "configs/reproduction/line10000_li.json",
+      "em": "configs/reproduction/line10000_em.json",
+      "stages_s": [
+        60
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "source_history/acceptance_exb_source_v3_20261010/src",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "matched",
+      "historical_reports": [
+        {
+          "path": "benchmarks/line10000/acceptance_t60.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "03edcda4cc46479b43373506c1d223992cf413469a9dfff5d9f2576057648823",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "load0p2": {
+      "li": "configs/reproduction/load0p2_li.json",
+      "em": "configs/reproduction/load0p2_em.json",
+      "stages_s": [
+        60
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "source_history/conductance_acceptance_source_v4_20261013/src",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "equivalent_passive_conductance_t60_v1",
+      "historical_reports": [
+        {
+          "path": "benchmarks/load0p2/acceptance_t60.json",
+          "pass": false,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        },
+        {
+          "path": "benchmarks/load0p2/equivalent_passive_conductance_t60_v1.json",
+          "pass": true,
+          "stage": {
+            "name": "60",
+            "nominal_target_s": 60.0,
+            "requested_end_s": 60.0,
+            "completed_time_s": 60.0
+          }
+        }
+      ],
+      "expected_configuration_hash": "e33ebcff1629897ef7de6a09d33f00aaa9c2cf3253da1d356127c688e2f6bb63",
+      "historical_status": "reports retained; inspect each stage verdict"
+    },
+    "load5": {
+      "li": "configs/reproduction/load5_li.json",
+      "em": "configs/reproduction/load5_em.json",
+      "stages_s": [
+        60
+      ],
+      "grid_points": [
+        100,
+        401
+      ],
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "source_directory": "source_history/conductance_acceptance_source_v4_20261013/src",
+      "source_identity": "archived snapshot; see provenance",
+      "acceptance_profile": "equivalent_passive_conductance_t60_v1",
+      "historical_reports": [],
+      "expected_configuration_hash": "ceeb4bfc8e590bf654acc76395eeb5ea5032a70470859fe2d27d9c0c4f94e8b1",
+      "historical_status": "configuration only; historical completion unverified"
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "created_local": "2026-10-10T08:11:04.905625+08:00",
+  "passed": true,
+  "scope": "existing API plus analytic passive-load ledger; no time integration",
+  "source_files_sha256_verified": 89,
+  "unchanged_B_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+  "matched_admittance_s": 0.7957747154594768,
+  "one_way_time_s": 20.0,
+  "candidate_status": "illustrative equivalent-load sensitivities, not observed E-region values",
+  "rows": [
+    {
+      "equivalent_conductance_s": 0.0,
+      "electric_potential_reflection": 1.0,
+      "reflected_characteristic_energy_fraction": 1.0,
+      "absorbed_characteristic_energy_fraction": 0.0,
+      "configuration_hash": "d046157aca7a77a3154564c426915e4365567f984f0cfbe38387d9bdd7e08560"
+    },
+    {
+      "equivalent_conductance_s": 0.01,
+      "electric_potential_reflection": 0.9751791665632057,
+      "reflected_characteristic_energy_fraction": 0.9509744068989084,
+      "absorbed_characteristic_energy_fraction": 0.04902559310109156,
+      "configuration_hash": "b5fe200eb783b16c732b7ff677994b80b2c165c52a40c6d99ac4f58d27750ba9"
+    },
+    {
+      "equivalent_conductance_s": 0.1,
+      "electric_potential_reflection": 0.7767295765906806,
+      "reflected_characteristic_energy_fraction": 0.6033088351507381,
+      "absorbed_characteristic_energy_fraction": 0.3966911648492619,
+      "configuration_hash": "3993372986b3ea67e94c346f99d5208d5ec0e87248692041e79ddc81f96a29d7"
+    },
+    {
+      "equivalent_conductance_s": 0.7957747154594768,
+      "electric_potential_reflection": 0.0,
+      "reflected_characteristic_energy_fraction": 0.0,
+      "absorbed_characteristic_energy_fraction": 1.0,
+      "configuration_hash": "44429c65d2530b5882a442dd26e3b9841f7189e43a82d6ff51abd37c6899bab0"
+    },
+    {
+      "equivalent_conductance_s": 1.0,
+      "electric_potential_reflection": -0.11372544828835561,
+      "reflected_characteristic_energy_fraction": 0.012933477588387445,
+      "absorbed_characteristic_energy_fraction": 0.9870665224116125,
+      "configuration_hash": "4336e1c7c26ddc7c00c08e5c8eb6d7c5fbfee12d8fcfb727ddb7e964ccc21762"
+    },
+    {
+      "equivalent_conductance_s": 10.0,
+      "electric_potential_reflection": -0.8525766355016778,
+      "reflected_characteristic_energy_fraction": 0.7268869194033608,
+      "absorbed_characteristic_energy_fraction": 0.2731130805966392,
+      "configuration_hash": "a5f33b633c1a1a5b27dadd107e5eaa5ee501e59f3cc18a7c44b393171d267eca"
+    }
+  ],
+  "physical_parameters_hash_protected": {
+    "field_line_length_km": true,
+    "alfven_speed_km_s": true
+  },
+  "implementation_status": {
+    "scalar_passive_load": "already implemented",
+    "physical_E_region_metric_mapping": "not established",
+    "common_background_ExB": "not implemented"
+  },
+  "limitations": [
+    "single uniform-VA branch from Li plane toward magnetosphere",
+    "hemisphere_count in column closure does not create two independent terminal loads",
+    "no Hall tensor, spatially varying load, or measured conductance calibration",
+    "boundary energy fractions are analytic characteristics, not global RK-stage conservation",
+    "no evidence yet that replacing matched load produces Y bifurcation"
+  ]
+}

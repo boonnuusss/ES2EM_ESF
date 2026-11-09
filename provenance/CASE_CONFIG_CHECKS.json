@@ -1,0 +1,236 @@
+[
+  {
+    "case": "A",
+    "exit_code": 0,
+    "provenance": {
+      "case": "A",
+      "target_time_s": 60.0,
+      "configuration_hash": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+      "source_directory": "source_history/matched_period_AB_source_20261009",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "B",
+    "exit_code": 0,
+    "provenance": {
+      "case": "B",
+      "target_time_s": 60.0,
+      "configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+      "source_directory": "source_history/matched_period_AB_source_20261009",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "C",
+    "exit_code": 0,
+    "provenance": {
+      "case": "C",
+      "target_time_s": 60.0,
+      "configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+      "source_directory": "src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "D",
+    "exit_code": 0,
+    "provenance": {
+      "case": "D",
+      "target_time_s": 60.0,
+      "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+      "source_directory": "src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "exb10",
+    "exit_code": 0,
+    "provenance": {
+      "case": "exb10",
+      "target_time_s": 60.0,
+      "configuration_hash": "2fc21197d5a2a30fc4e3f1bbf06b60951106956ec41d7b82d62e8bb9b933f527",
+      "source_directory": "source_history/acceptance_exb_source_v3_20261010/src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "exb20",
+    "exit_code": 0,
+    "provenance": {
+      "case": "exb20",
+      "target_time_s": 60.0,
+      "configuration_hash": "fdafd006233807f6aa30f885b467753011e5fb260f7cfd71731bbcc5b3bc9112",
+      "source_directory": "source_history/acceptance_exb_source_v3_20261010/src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "line10000",
+    "exit_code": 0,
+    "provenance": {
+      "case": "line10000",
+      "target_time_s": 60.0,
+      "configuration_hash": "03edcda4cc46479b43373506c1d223992cf413469a9dfff5d9f2576057648823",
+      "source_directory": "source_history/acceptance_exb_source_v3_20261010/src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "load0p2",
+    "exit_code": 0,
+    "provenance": {
+      "case": "load0p2",
+      "target_time_s": 60.0,
+      "configuration_hash": "e33ebcff1629897ef7de6a09d33f00aaa9c2cf3253da1d356127c688e2f6bb63",
+      "source_directory": "source_history/conductance_acceptance_source_v4_20261013/src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  },
+  {
+    "case": "load5",
+    "exit_code": 0,
+    "provenance": {
+      "case": "load5",
+      "target_time_s": 60.0,
+      "configuration_hash": "ceeb4bfc8e590bf654acc76395eeb5ea5032a70470859fe2d27d9c0c4f94e8b1",
+      "source_directory": "source_history/conductance_acceptance_source_v4_20261013/src",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "packages": {
+        "numpy": "2.5.1",
+        "scipy": "1.18.0",
+        "matplotlib": "3.10.9",
+        "pypardiso": "0.4.7",
+        "mkl": "2026.1.0",
+        "pytest": "9.1.1"
+      },
+      "thread_environment": {
+        "MKL_NUM_THREADS": "1",
+        "OMP_NUM_THREADS": "1",
+        "OPENBLAS_NUM_THREADS": "1",
+        "MKL_DYNAMIC": "FALSE"
+      }
+    }
+  }
+]

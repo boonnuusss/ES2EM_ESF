@@ -1,0 +1,53 @@
+{
+  "created_local": "2026-10-10T17:10:21.729868+08:00",
+  "passed": true,
+  "time_s": 60,
+  "step": 240,
+  "configuration_hash": "03edcda4cc46479b43373506c1d223992cf413469a9dfff5d9f2576057648823",
+  "terminal_density_and_line_arrays_byte_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 2,
+  "two_ES_terminal_and_full_history_byte_exact_vs_B": true,
+  "matched_snapshot_ES_byte_exact_count": 7,
+  "ES_diagnostic_records_exact": 60,
+  "visual_qa_done": true,
+  "qa": "smooth early maps/readable three-track curves; no mature Y inference",
+  "comparison_vs_B": {
+    "baseline_density_m3": {
+      "density_relative_l2": 0.0,
+      "structure_relative_l2": 0.0,
+      "gamma_short_s_inverse": -0.00039243112620523745,
+      "gamma_B_s_inverse": -0.00039243112620523745,
+      "gamma_relative_difference": 0.0
+    },
+    "column_control_density_m3": {
+      "density_relative_l2": 0.0,
+      "structure_relative_l2": 0.0,
+      "gamma_short_s_inverse": 0.00040587843028246843,
+      "gamma_B_s_inverse": 0.00040587843028246843,
+      "gamma_relative_difference": 0.0
+    },
+    "coupled_density_m3": {
+      "density_relative_l2": 0.0,
+      "structure_relative_l2": 0.0,
+      "gamma_short_s_inverse": 0.0003022244741147432,
+      "gamma_B_s_inverse": 0.0003022244741147432,
+      "gamma_relative_difference": 0.0
+    },
+    "pure_EM": {
+      "relative_l2": 0.0
+    },
+    "geometry": {
+      "relative_l2": 0.0
+    }
+  },
+  "original_driver_exception_preserved": "acceptance hash reconstruction omitted default-zero drift removal; raw stderr retained",
+  "acceptance_fix": {
+    "file": "src/esf_sim/em_growth_acceptance.py",
+    "targeted_tests_passed": 6,
+    "scope": "zero omission/nonzero float normalization; physical tamper detection kept; no array/hash/threshold changes"
+  },
+  "production_rerun": false
+}

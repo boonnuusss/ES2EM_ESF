@@ -1,0 +1,115 @@
+{
+  "checked_local": "2026-10-09T12:37:39.916380+08:00",
+  "passed": true,
+  "time_s": 300,
+  "step": 1200,
+  "configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+  "terminal_arrays_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 2,
+  "visual_qa_done": true,
+  "finding": "Early smooth three-track perturbation; no mature bifurcation conclusion.",
+  "same_grid_single_thread_A_comparison": {
+    "baseline_density_m3": {
+      "byte_exact_B_vs_A": true,
+      "structure_relative_l2_B_vs_A": 0.0
+    },
+    "column_control_density_m3": {
+      "byte_exact_B_vs_A": true,
+      "structure_relative_l2_B_vs_A": 0.0
+    },
+    "coupled_density_m3": {
+      "byte_exact_B_vs_A": false,
+      "structure_relative_l2_B_vs_A": 0.0014869869658438511
+    }
+  },
+  "comparisons": {
+    "A_same_grid_same_thread": {
+      "spatial": {
+        "baseline_density_m3": {
+          "density_relative_l2_B_vs_reference": 0.0,
+          "structure_relative_l2_B_vs_reference": 0.0
+        },
+        "column_control_density_m3": {
+          "density_relative_l2_B_vs_reference": 0.0,
+          "structure_relative_l2_B_vs_reference": 0.0
+        },
+        "coupled_density_m3": {
+          "density_relative_l2_B_vs_reference": 0.00011583090793383961,
+          "structure_relative_l2_B_vs_reference": 0.0014869869658438511
+        },
+        "pure_EM": {
+          "relative_l2_B_vs_reference": 0.030290057023216275
+        }
+      },
+      "growth_window_s": [
+        200,
+        300
+      ],
+      "growth": {
+        "baseline_density_m3": {
+          "B_gamma_s_inverse": 6.033710816196276e-06,
+          "reference_gamma_s_inverse": 6.033710816196276e-06,
+          "B_relative_to_reference": 0.0
+        },
+        "column_control_density_m3": {
+          "B_gamma_s_inverse": 0.00045207949338023443,
+          "reference_gamma_s_inverse": 0.00045207949338023443,
+          "B_relative_to_reference": 0.0
+        },
+        "coupled_density_m3": {
+          "B_gamma_s_inverse": 0.00032422139469299825,
+          "reference_gamma_s_inverse": 0.0003257300198434873,
+          "B_relative_to_reference": -0.004631520150380819
+        }
+      }
+    },
+    "D_same_FAC_thread_confounded": {
+      "spatial": {
+        "baseline_density_m3": {
+          "density_relative_l2_B_vs_reference": 1.1744721973945542e-05,
+          "structure_relative_l2_B_vs_reference": 0.00017455653949990832
+        },
+        "column_control_density_m3": {
+          "density_relative_l2_B_vs_reference": 1.047617776708218e-05,
+          "structure_relative_l2_B_vs_reference": 0.00013012272772859596
+        },
+        "coupled_density_m3": {
+          "density_relative_l2_B_vs_reference": 7.292552842912002e-06,
+          "structure_relative_l2_B_vs_reference": 9.354353754385365e-05
+        },
+        "pure_EM": {
+          "relative_l2_B_vs_reference": 0.0008665319077828469
+        }
+      },
+      "growth_window_s": [
+        200,
+        300
+      ],
+      "growth": {
+        "baseline_density_m3": {
+          "B_gamma_s_inverse": 6.033710816196276e-06,
+          "reference_gamma_s_inverse": 6.252847803851631e-06,
+          "B_relative_to_reference": -0.035045949386513287
+        },
+        "column_control_density_m3": {
+          "B_gamma_s_inverse": 0.00045207949338023443,
+          "reference_gamma_s_inverse": 0.0004524400328658489,
+          "B_relative_to_reference": -0.0007968779493953138
+        },
+        "coupled_density_m3": {
+          "B_gamma_s_inverse": 0.00032422139469299825,
+          "reference_gamma_s_inverse": 0.00032447257599874763,
+          "B_relative_to_reference": -0.0007741218344146095
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Early controls do not prove mature Y causality or convergence.",
+    "B/D shares FAC cutoff and250km period but differs horizontal grid and historical threading.",
+    "Sampled power integral is not exact RK-stage work."
+  ]
+}

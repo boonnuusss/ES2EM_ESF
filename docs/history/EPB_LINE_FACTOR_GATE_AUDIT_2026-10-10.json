@@ -1,0 +1,145 @@
+{
+  "created_local": "2026-10-10T13:08:36.993276+08:00",
+  "passed": true,
+  "scope": "readonly parameter/CFL/hash ledger; no EPB integration",
+  "source_files_sha256_verified": 89,
+  "rows": [
+    {
+      "name": "B_reference",
+      "changes": {},
+      "configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.4,
+      "one_way_s": 20.0,
+      "round_trip_s": 40.0,
+      "SigmaA_s": 0.7957747154594768,
+      "load_s": 0.7957747154594768,
+      "reflection": 0.0,
+      "analytic_absorption": 1.0,
+      "status": "readonly_candidate_no_launch"
+    },
+    {
+      "name": "L10000_fixed_ds",
+      "changes": {
+        "field_line_length_km": 10000.0,
+        "field_line_cells": 16
+      },
+      "configuration_hash": "03edcda4cc46479b43373506c1d223992cf413469a9dfff5d9f2576057648823",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.4,
+      "one_way_s": 10.0,
+      "round_trip_s": 20.0,
+      "SigmaA_s": 0.7957747154594768,
+      "load_s": 0.7957747154594768,
+      "reflection": 0.0,
+      "analytic_absorption": 1.0,
+      "status": "readonly_candidate_no_launch"
+    },
+    {
+      "name": "L40000_fixed_ds",
+      "changes": {
+        "field_line_length_km": 40000.0,
+        "field_line_cells": 64
+      },
+      "configuration_hash": "a21b1f97858ede12c0210196dca332bb57d4d9e49b30df37d4c7ebaa84373877",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.4,
+      "one_way_s": 40.0,
+      "round_trip_s": 80.0,
+      "SigmaA_s": 0.7957747154594768,
+      "load_s": 0.7957747154594768,
+      "reflection": 0.0,
+      "analytic_absorption": 1.0,
+      "status": "readonly_candidate_no_launch"
+    },
+    {
+      "name": "VA500_matched",
+      "changes": {
+        "alfven_speed_km_s": 500.0
+      },
+      "configuration_hash": "ee4f64e4afba898e5473e00d43a669bf00c1f47e86f1ebefccc12a578cffb7e8",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.2,
+      "one_way_s": 40.0,
+      "round_trip_s": 80.0,
+      "SigmaA_s": 1.5915494309189535,
+      "load_s": 1.5915494309189535,
+      "reflection": 0.0,
+      "analytic_absorption": 1.0,
+      "status": "readonly_candidate_no_launch"
+    },
+    {
+      "name": "VA500_fixed_S",
+      "changes": {
+        "alfven_speed_km_s": 500.0,
+        "right_boundary_model": "conductance",
+        "right_boundary_conductance_s": 0.7957747154594768
+      },
+      "configuration_hash": "99980bd1fba7579c76f65e12376e3aceb0e66698cc96482a2137fe4786277a51",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.2,
+      "one_way_s": 40.0,
+      "round_trip_s": 80.0,
+      "SigmaA_s": 1.5915494309189535,
+      "load_s": 0.7957747154594768,
+      "reflection": 0.3333333333333333,
+      "analytic_absorption": 0.8888888888888888,
+      "status": "readonly_candidate_no_launch"
+    },
+    {
+      "name": "load_ratio_0p2",
+      "changes": {
+        "right_boundary_model": "conductance",
+        "right_boundary_conductance_s": 0.15915494309189537
+      },
+      "configuration_hash": "e33ebcff1629897ef7de6a09d33f00aaa9c2cf3253da1d356127c688e2f6bb63",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.4,
+      "one_way_s": 20.0,
+      "round_trip_s": 40.0,
+      "SigmaA_s": 0.7957747154594768,
+      "load_s": 0.15915494309189537,
+      "reflection": 0.6666666666666666,
+      "analytic_absorption": 0.5555555555555556,
+      "status": "readonly_candidate_no_launch"
+    },
+    {
+      "name": "load_ratio_5",
+      "changes": {
+        "right_boundary_model": "conductance",
+        "right_boundary_conductance_s": 3.978873577297384
+      },
+      "configuration_hash": "ceeb4bfc8e590bf654acc76395eeb5ea5032a70470859fe2d27d9c0c4f94e8b1",
+      "spacing_km": 625.0,
+      "macro_dt_s": 0.25,
+      "line_CFL": 0.4,
+      "one_way_s": 20.0,
+      "round_trip_s": 40.0,
+      "SigmaA_s": 0.7957747154594768,
+      "load_s": 3.978873577297384,
+      "reflection": -0.6666666666666666,
+      "analytic_absorption": 0.5555555555555556,
+      "status": "readonly_candidate_no_launch"
+    }
+  ],
+  "VA2000_at_baseline_dt": {
+    "line_CFL": 0.8,
+    "eligible": false,
+    "reason": "exceeds configured 0.4; requires independent common-dt baseline and all paired cases"
+  },
+  "production_started": false,
+  "tests_status": "4 targeted tests passed; candidate full-grid model/column-weight/RHS preflight still pending",
+  "next_action": "Verify candidate build-model column weights and initial three-track RHS, then prepare one independent 60s gate; no driver launch yet",
+  "targeted_tests": {
+    "passed": 4,
+    "duration_s": 0.55,
+    "scope": "existing modal direction, CFL/shape, passive conductance and matched pulse tests; isolated line tests only, no EPB production"
+  },
+  "configuration_hash_scope": "candidate physical configurations inherited B3150 config; no runnable configs or output directories created"
+}

@@ -1,0 +1,365 @@
+{
+  "checked_at_local": "2026-10-06T16:50:39.11687+08:00",
+  "result": "300s_completed_stage_acceptance_passed_visual_QA_done",
+  "python_process_count": 0,
+  "checkpoint": {
+    "time_s": 300,
+    "step": 1200,
+    "schema_version": 3,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "all_float_arrays_finite": true,
+    "all_three_densities_positive": true
+  },
+  "terminal_audit": {
+    "pass": true,
+    "time_s": 300.0,
+    "step": 1200,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "terminal_density_and_line_arrays_exact": true,
+    "all_float_arrays_finite": true,
+    "density_minima_m3": {
+      "baseline_density_m3": 15289847.8104836,
+      "column_control_density_m3": 15289847.80668463,
+      "coupled_density_m3": 15289848.04446964
+    },
+    "stored_shape": [
+      401,
+      200
+    ],
+    "period_x_km": 250.0
+  },
+  "strict_acceptance_pass": true,
+  "failures": [],
+  "warnings": [
+    "near limit [column_em_combined_cfl]",
+    "raw content drift is diagnostic only for an open vertical boundary [column_content_balance]"
+  ],
+  "numerical_health": {
+    "minimum_dt_s": 0.25,
+    "maximum_baseline_cfl": 0.016042884166050264,
+    "maximum_column_control_cfl": 0.002661354557734652,
+    "maximum_coupled_cfl": 0.4,
+    "maximum_baseline_potential_relative_residual": 5.422790841400822e-13,
+    "maximum_column_control_potential_relative_residual": 5.280200460285672e-13,
+    "maximum_coupled_potential_relative_residual": 6.741122801418597e-13,
+    "maximum_coupling_relative_residual": 6.741122801418597e-13,
+    "minimum_densities_m3": {
+      "local_es": 15289847.8104836,
+      "column_es": 15289847.80668463,
+      "column_em": 15289848.04446964
+    },
+    "all_final_density_values_finite": true,
+    "dt_reductions": 0
+  },
+  "fac_and_power": {
+    "fac_to_gravity_ratio_active_median": 0.2416030242677729,
+    "fac_to_gravity_ratio_active_maximum": 0.2427647805699861,
+    "maximum_abs_surface_fac_a_m2": 8.794075638659884e-09,
+    "maximum_abs_net_surface_current_a": 6.776263578034403e-14,
+    "net_surface_current_to_max_domain_current_ratio": 8.033098996392562e-17,
+    "surface_fac_balance": {
+      "evaluable": true,
+      "reason": null,
+      "normalization": "max_abs_times_computational_area_proxy",
+      "normalizations_used": [
+        "max_abs_times_computational_area_proxy"
+      ],
+      "record_count": 300,
+      "maximum_ratio": 8.033098996392562e-17
+    },
+    "maximum_relative_power_pairing_defect": 6.229694802745221e-16,
+    "remote_absorbed_energy_j": 490322.9570324614,
+    "integrated_absolute_ionosphere_port_power_j": 526935.410713956,
+    "remote_absorption_fraction_of_absolute_port_energy": 0.9305181376368546,
+    "minimum_remote_power_w": 0.0,
+    "maximum_abs_remote_reflection_coefficient": 0.0,
+    "line_energy_budget": {
+      "evaluable": true,
+      "reason": null,
+      "verification_level": "physical_energy_with_sampled_port_quadrature",
+      "characteristic_energy_formula_exact": true,
+      "discrete_ssprk_stage_power_integral_archived": false,
+      "port_work_quadrature": "trapezoidal_representative_stage_samples",
+      "initial_line_energy_j": 0.0,
+      "final_line_energy_j": 36608.07867500256,
+      "line_energy_change_j": 36608.07867500256,
+      "net_boundary_work_j": 36612.4824131741,
+      "remote_absorbed_energy_j": 490322.95703246136,
+      "work_minus_energy_j": 4.403738171538862,
+      "relative_work_minus_energy": 8.98130121867273e-06,
+      "numerical_energy_creation_fraction": 0.0,
+      "numerical_dissipation_fraction": 8.98130121867273e-06,
+      "sample_count_including_t0": 301
+    }
+  },
+  "growth": {
+    "local_es": {
+      "archived_fit_window": {
+        "sample_count": 1201,
+        "start_s": 0.0,
+        "end_s": 300.0,
+        "duration_s": 300.0,
+        "rate_s_inv": -0.00015623323581591335,
+        "r_squared": 0.8245845477937669
+      },
+      "late_100s_fit": {
+        "sample_count": 401,
+        "start_s": 200.0,
+        "end_s": 300.0,
+        "duration_s": 100.0,
+        "rate_s_inv": 6.252847803851631e-06,
+        "r_squared": 0.1361233285433492
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 244.0,
+        "minimum_amplitude_m3": 38023283118.14015,
+        "final_amplitude_m3": 38092654178.847305,
+        "final_to_minimum_amplitude": 1.0018244363720938,
+        "window": {
+          "sample_count": 225,
+          "start_s": 244.0,
+          "end_s": 300.0,
+          "duration_s": 56.0,
+          "rate_s_inv": 3.273019595288801e-05,
+          "r_squared": 0.9406954369231048
+        }
+      }
+    },
+    "column_es": {
+      "archived_fit_window": {
+        "sample_count": 1201,
+        "start_s": 0.0,
+        "end_s": 300.0,
+        "duration_s": 300.0,
+        "rate_s_inv": 0.00043069885528089323,
+        "r_squared": 0.9996080132576328
+      },
+      "late_100s_fit": {
+        "sample_count": 401,
+        "start_s": 200.0,
+        "end_s": 300.0,
+        "duration_s": 100.0,
+        "rate_s_inv": 0.0004524400328658489,
+        "r_squared": 0.9999635586609712
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 0.0,
+        "minimum_amplitude_m3": 40066735464.423225,
+        "final_amplitude_m3": 45591331148.28206,
+        "final_to_minimum_amplitude": 1.1378848468641607,
+        "window": {
+          "sample_count": 1201,
+          "start_s": 0.0,
+          "end_s": 300.0,
+          "duration_s": 300.0,
+          "rate_s_inv": 0.00043069885528089323,
+          "r_squared": 0.9996080132576328
+        }
+      }
+    },
+    "column_em": {
+      "archived_fit_window": {
+        "sample_count": 1201,
+        "start_s": 0.0,
+        "end_s": 300.0,
+        "duration_s": 300.0,
+        "rate_s_inv": 0.00031464913327189186,
+        "r_squared": 0.9998615363882327
+      },
+      "late_100s_fit": {
+        "sample_count": 401,
+        "start_s": 200.0,
+        "end_s": 300.0,
+        "duration_s": 100.0,
+        "rate_s_inv": 0.00032447257599874763,
+        "r_squared": 0.9999841335589006
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 0.0,
+        "minimum_amplitude_m3": 40066735464.423225,
+        "final_amplitude_m3": 44077343509.24616,
+        "final_to_minimum_amplitude": 1.1000981986262421,
+        "window": {
+          "sample_count": 1201,
+          "start_s": 0.0,
+          "end_s": 300.0,
+          "duration_s": 300.0,
+          "rate_s_inv": 0.00031464913327189186,
+          "r_squared": 0.9998615363882327
+        }
+      }
+    }
+  },
+  "morphology": {
+    "local_es": {
+      "exists": true,
+      "depletion_threshold": 0.25,
+      "component_count": 1,
+      "cell_count": 352,
+      "bottom_km": 251.0,
+      "top_km": 266.0,
+      "vertical_span_km": 15.0,
+      "area_km2": 440.0,
+      "maximum_depletion": 0.29225291006965837,
+      "maximum_width_cells": 35,
+      "maximum_width_km": 43.75,
+      "width_layer_count": 16,
+      "layers_at_least_two_cells_wide": 16
+    },
+    "column_es": {
+      "exists": true,
+      "depletion_threshold": 0.25,
+      "component_count": 1,
+      "cell_count": 278,
+      "bottom_km": 251.0,
+      "top_km": 264.0,
+      "vertical_span_km": 13.0,
+      "area_km2": 347.5,
+      "maximum_depletion": 0.2855559477213361,
+      "maximum_width_cells": 33,
+      "maximum_width_km": 41.25,
+      "width_layer_count": 14,
+      "layers_at_least_two_cells_wide": 14
+    },
+    "column_em": {
+      "exists": false,
+      "depletion_threshold": 0.25,
+      "component_count": 0,
+      "cell_count": 0,
+      "bottom_km": null,
+      "top_km": null,
+      "vertical_span_km": 0.0,
+      "area_km2": 0.0,
+      "maximum_depletion": 0.1373458129974101,
+      "maximum_width_cells": 0,
+      "maximum_width_km": 0.0,
+      "width_layer_count": 0,
+      "layers_at_least_two_cells_wide": 0
+    }
+  },
+  "same_time_comparison": {
+    "corrected_fine": {
+      "growth_fit": {
+        "local_es": {
+          "rate_s_inv": 6.252847803851631e-06,
+          "r_squared": 0.1361233285433492
+        },
+        "column_es": {
+          "rate_s_inv": 0.0004524400328658489,
+          "r_squared": 0.9999635586609712
+        },
+        "column_em": {
+          "rate_s_inv": 0.00032447257599874763,
+          "r_squared": 0.9999841335589006
+        }
+      },
+      "fit_window_s": [
+        200,
+        300
+      ],
+      "sample_count": 401,
+      "sample_method": "equal-weight OLS of archived macro-step ln RMS, dt=0.25 s; legacy RMS includes all archived columns",
+      "fac_to_gravity_active_median": 0.2416030242677729,
+      "fac_to_gravity_terminal": 0.240506755994302,
+      "sampled_signed_port_work_j": 526935.4394456354,
+      "sampled_remote_absorbed_j": 490322.95703246136
+    },
+    "legacy_fine": {
+      "growth_fit": {
+        "local_es": {
+          "rate_s_inv": 6.656305578561827e-06,
+          "r_squared": 0.151557175509495
+        },
+        "column_es": {
+          "rate_s_inv": 0.0004528187029014734,
+          "r_squared": 0.9999635645113334
+        },
+        "column_em": {
+          "rate_s_inv": 0.00032461967244804907,
+          "r_squared": 0.9999841501053539
+        }
+      },
+      "fit_window_s": [
+        200,
+        300
+      ],
+      "sample_count": 401,
+      "sample_method": "equal-weight OLS of archived macro-step ln RMS, dt=0.25 s; legacy RMS includes all archived columns",
+      "fac_to_gravity_active_median": 0.2417045796247506,
+      "fac_to_gravity_terminal": 0.24061550696487788,
+      "sampled_signed_port_work_j": 532160.4952833678,
+      "sampled_remote_absorbed_j": 495182.37765367667
+    },
+    "legacy_coarse": {
+      "growth_fit": {
+        "local_es": {
+          "rate_s_inv": 6.894749007828114e-06,
+          "r_squared": 0.16109125316259731
+        },
+        "column_es": {
+          "rate_s_inv": 0.0004528203761797189,
+          "r_squared": 0.9999636096769281
+        },
+        "column_em": {
+          "rate_s_inv": 0.00032606219887585264,
+          "r_squared": 0.9999835543358159
+        }
+      },
+      "fit_window_s": [
+        200,
+        300
+      ],
+      "sample_count": 401,
+      "sample_method": "equal-weight OLS of archived macro-step ln RMS, dt=0.25 s; legacy RMS includes all archived columns",
+      "fac_to_gravity_active_median": 0.24163491664452166,
+      "fac_to_gravity_terminal": 0.2404830338566015,
+      "sampled_signed_port_work_j": 537433.2622588512,
+      "sampled_remote_absorbed_j": 500099.33008513134
+    },
+    "spatial_comparison": {
+      "legacy_fine": {
+        "local_es": {
+          "density_relative_l2": 0.00014598368569497506,
+          "horizontal_structure_relative_l2": 0.00041838607704841173
+        },
+        "column_es": {
+          "density_relative_l2": 8.636657588648336e-05,
+          "horizontal_structure_relative_l2": 0.00023475861444109997
+        },
+        "column_em": {
+          "density_relative_l2": 6.162928354796485e-05,
+          "horizontal_structure_relative_l2": 0.00013761912548239987
+        },
+        "geometry_effect_relative_l2": 0.007039391075860002,
+        "pure_em_effect_relative_l2": 0.00667473908888484
+      },
+      "legacy_coarse": {
+        "local_es": {
+          "density_relative_l2": 0.00032755036906999485,
+          "horizontal_structure_relative_l2": 0.0019017484414977888
+        },
+        "column_es": {
+          "density_relative_l2": 0.0001727698180792313,
+          "horizontal_structure_relative_l2": 0.0004104221025146963
+        },
+        "column_em": {
+          "density_relative_l2": 0.00018012387411179138,
+          "horizontal_structure_relative_l2": 0.0016638484404793018
+        },
+        "geometry_effect_relative_l2": 0.015736714343934217,
+        "pure_em_effect_relative_l2": 0.03195123802301645
+      }
+    },
+    "interpretation": "Common physical nodes: retain corrected unique columns; drop legacy closing stored column, and decimate corrected array 2x for coarse. Operator periods differ (250,251.25,252.5 km); FAC truncation differs for coarse, so these are controlled observations, not strict convergence evidence."
+  },
+  "visual_qa": {
+    "done": true,
+    "images": [
+      "<ORIGINAL_CHECKOUT>\\output\\em_growth\\unique_periodic_200x401_k8_three_track_20261006\\postprocess_t300\\em_growth_comparison.png",
+      "<ORIGINAL_CHECKOUT>\\output\\em_growth\\resolution_201x401_k8_matched_dipole_chapman_three_track_20260930\\postprocess_t300\\em_growth_comparison.png"
+    ],
+    "finding": "Corrected and legacy fine share smooth early structure; column EM has no D>=0.25 component or Y bifurcation. Small ES depletion components at251-266 km. No obvious seam/render artifacts."
+  },
+  "next_action": "Recommend archive300 and same-hash resume to3150 after explicit user decision. No extension launched. Keep old f7 failed result unchanged.",
+  "limitations": "Only300 s early-stage evidence. Different legacy computational periods, two resolutions and coupled FAC truncation changes do not prove convergence. Energy is sampled power quadrature, not exact RK-stage work. Open particle content drift is not closed-domain conservation error. Missing parallel mass transport, full two-hemisphere metric, chemistry, winds/shear, PRE and dynamic E conductance; not quantitative prediction."
+}

@@ -1,0 +1,8 @@
+{
+  "passed": true,
+  "time_s": 0.04,
+  "configuration_hash": "772e0b0e8e6aa8d5c302a4ba2b74a5e3b0a04d4148ab52e6d08d25eadf3c5626",
+  "terminal_snapshot": "snapshot_000002.npz",
+  "finite_positive": true,
+  "terminal_arrays_exact": true
+}

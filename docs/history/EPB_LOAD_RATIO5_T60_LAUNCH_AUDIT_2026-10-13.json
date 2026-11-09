@@ -1,0 +1,133 @@
+{
+  "launch": {
+    "stderr": "<ORIGINAL_CHECKOUT>/tmp/load_ratio5_t60_20261010_stderr.log",
+    "target_time_s": 60,
+    "resume": true,
+    "output_dir": "<ORIGINAL_CHECKOUT>/output/em_growth/load_ratio5_x100_y401_k8_three_track_20261010",
+    "created_local": "2026-10-13T22:34:24.6946118+08:00",
+    "stdout": "<ORIGINAL_CHECKOUT>/tmp/load_ratio5_t60_20261010_stdout.log",
+    "driver": "<ORIGINAL_CHECKOUT>/tmp/run_load_ratio5_t60_20261010.py",
+    "configuration_hash": "ceeb4bfc8e590bf654acc76395eeb5ea5032a70470859fe2d27d9c0c4f94e8b1",
+    "initial_pid": 5560
+  },
+  "actual_processes_at_launch": [
+    {
+      "ProcessId": 5560,
+      "CommandLine": "\"C:\\Users\\12928\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" <ORIGINAL_CHECKOUT>/tmp/run_load_ratio5_t60_20261010.py"
+    }
+  ],
+  "stderr_empty": true,
+  "ratio0p2_archive": {
+    "file_count": 25,
+    "all_sha256_verified": true,
+    "checkpoint_byte_exact": true,
+    "archive": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\load_ratio0p2_x100_y401_k8_three_track_20261010\\archive_t60",
+    "original_matched_pass": false,
+    "independent_conductance_pass": true,
+    "manifest": [
+      {
+        "file": "acceptance_t60.json",
+        "sha256": "e7a76db4a94c7c35e0fbbd81f156c2fa3ed2bd2e368f2da2bb045d3ccdf1c8f5"
+      },
+      {
+        "file": "checkpoint.npz",
+        "sha256": "c376d56be604a4226fae07cf3903c2c5116cf7feb34d714eae7f0f5a34502065"
+      },
+      {
+        "file": "diagnostics.jsonl",
+        "sha256": "9cf0685d28ad07c78a2e600dbdb7b23fd810853a3c13cdcaefe87666700d44bc"
+      },
+      {
+        "file": "em_growth_report.json",
+        "sha256": "942c0e0d0cfec66d00a50146f2cdc7068f37c5036d75a315435a2290cec2abf2"
+      },
+      {
+        "file": "final_states.npz",
+        "sha256": "fae599d95a095d2b0a1172bf1d2f3713bba3eed4356d8c74369b57d8d9fc39d8"
+      },
+      {
+        "file": "snapshot_manifest.json",
+        "sha256": "8147dc5fb800fb626408bcc672b86f2291ed9f28a93b74648618b7882561b4bb"
+      },
+      {
+        "file": "status.json",
+        "sha256": "979a7d5a00078e4408b06bae8a44c724f323cec51bee2b41e4632ec452f8346e"
+      },
+      {
+        "file": "terminal_audit_t60.json",
+        "sha256": "52a927189105f45ad31cee0319ba5efd91e3c10aa1a1ef9a5f45eea98e64fc83"
+      },
+      {
+        "file": "postprocess_t60\\em_growth_comparison.pdf",
+        "sha256": "e33a580cd4abbe54a89b368a90c702ee21ac810ea2de04881c2dca60da2d993c"
+      },
+      {
+        "file": "postprocess_t60\\em_growth_comparison.png",
+        "sha256": "7b47d18a2a700ddf605e0caa5a9fc841d10aa9a49eb8fb56b47979cb94d5373e"
+      },
+      {
+        "file": "postprocess_t60\\em_growth_comparison.svg",
+        "sha256": "c2cebc2c82d8958e0585c24886d4aaba979a58769b436fd3b6950f966734f69a"
+      },
+      {
+        "file": "postprocess_t60\\em_growth_metrics.json",
+        "sha256": "bfb5b0c8e271437dd3090602899e8bf176068c6908675e2368120738c01aa91c"
+      },
+      {
+        "file": "postprocess_t60\\em_growth_source_data.npz",
+        "sha256": "a91cf7f5d66ef639808d3d9f3c9914a512f9c408b55df970e4900a28576884f9"
+      },
+      {
+        "file": "snapshots\\snapshot_000000.npz",
+        "sha256": "c4bffd03c1b7a52bbca130ab6ca72546c0b9e239e89696bb60c4e786c876893d"
+      },
+      {
+        "file": "snapshots\\snapshot_000001.npz",
+        "sha256": "1bc0cc77eae832bb44e4c9375974eb301d668e3e3e5be54eb68cf8264ecacc35"
+      },
+      {
+        "file": "snapshots\\snapshot_000002.npz",
+        "sha256": "6710d77095cb5e29ae53912435c7b0ca99fee740000b12f3a1a6d9b10db12303"
+      },
+      {
+        "file": "snapshots\\snapshot_000003.npz",
+        "sha256": "d6157f487410057ea8b953bcf48ff78a374ff3ef9ebf0e41c4a29f5187adf222"
+      },
+      {
+        "file": "snapshots\\snapshot_000004.npz",
+        "sha256": "41b648aa4af12a1b27c074c6a0a051572c193df905160dc513ac855bf3b1caeb"
+      },
+      {
+        "file": "snapshots\\snapshot_000005.npz",
+        "sha256": "428e52c4ff3978c27ea4da1c4e987e7ab7d0114dcd942a6ae10991ff6bfc64b0"
+      },
+      {
+        "file": "snapshots\\snapshot_000006.npz",
+        "sha256": "300f2a0ad64683682cd9c2be37887152e5690364134b02b7d093b614ff3b5339"
+      },
+      {
+        "file": "independent_review\\EPB_LOAD_RATIO0P2_T60_CONDUCTANCE_ACCEPTANCE_2026-10-13.json",
+        "sha256": "722f89e06bddb2836311139beecbb4e170d4e2f79b8ad2241e3a1b4af7fba5db"
+      },
+      {
+        "file": "independent_review\\EPB_LOAD_RATIO0P2_T60_EXCEPTION_AUDIT_2026-10-10.json",
+        "sha256": "7872b6e4e265f97af8f42b3ccf7048f9d6e2f53c75571eae1820d61059bcf43b"
+      },
+      {
+        "file": "independent_review\\EPB_CONDUCTANCE_ACCEPTANCE_IMPLEMENTATION_AUDIT_2026-10-13.json",
+        "sha256": "6d9ccafdd324ec6f8276c87c8ee3f614e162eeef5b1a10604e3e3957e93cebae"
+      },
+      {
+        "file": "configuration\\load_ratio0p2_li_20261010.json",
+        "sha256": "04e7db8fe3620d2c4895c7c4890024b6dad129fc4cf45d0f6270268082d799c9"
+      },
+      {
+        "file": "configuration\\load_ratio0p2_em_t60_20261010.json",
+        "sha256": "7f14df9b303c8ed19dafbe0177f48d7cc54fa823f1df394445815cbd26215935"
+      }
+    ]
+  },
+  "acceptance_profile": "equivalent_passive_conductance_t60_v1",
+  "source_snapshot": "conductance_acceptance_source_v4_20261013",
+  "next_followup_not_before_local": "2026-10-13T23:05:27.048959+08:00"
+}

@@ -1,0 +1,118 @@
+{
+  "created_local": "2026-10-11T01:17:38.858402+08:00",
+  "design_only": true,
+  "prototype_boundary_predicates_pass": true,
+  "fault_injection_cases": [
+    {
+      "name": "negative_S",
+      "rejected": true,
+      "errors": [
+        "conductance"
+      ]
+    },
+    {
+      "name": "nonfinite_S",
+      "rejected": true,
+      "errors": [
+        "conductance"
+      ]
+    },
+    {
+      "name": "scope_S_mismatch",
+      "rejected": true,
+      "errors": [
+        "scope_conductance"
+      ]
+    },
+    {
+      "name": "wrong_scope_R",
+      "rejected": true,
+      "errors": [
+        "reflection"
+      ]
+    },
+    {
+      "name": "wrong_record_R",
+      "rejected": true,
+      "errors": [
+        "reflection"
+      ]
+    },
+    {
+      "name": "nonfinite_record_R",
+      "rejected": true,
+      "errors": [
+        "reflection"
+      ]
+    },
+    {
+      "name": "active_boundary_power",
+      "rejected": true,
+      "errors": [
+        "passive_sampled_power"
+      ]
+    },
+    {
+      "name": "nonfinite_power",
+      "rejected": true,
+      "errors": [
+        "finite_power"
+      ]
+    },
+    {
+      "name": "external_voltage",
+      "rejected": true,
+      "errors": [
+        "external_voltage"
+      ]
+    },
+    {
+      "name": "wrong_model",
+      "rejected": true,
+      "errors": [
+        "model"
+      ]
+    },
+    {
+      "name": "wrong_identity",
+      "rejected": true,
+      "errors": [
+        "expected_identity"
+      ]
+    },
+    {
+      "name": "missing_history",
+      "rejected": true,
+      "errors": [
+        "reflection",
+        "finite_power"
+      ]
+    }
+  ],
+  "original_strict_pass": false,
+  "original_strict_failures": [
+    "required criterion failed [matched_remote_boundary]"
+  ],
+  "original_strict_warnings": [
+    "near limit [column_em_combined_cfl]",
+    "raw content drift is diagnostic only for an open vertical boundary [column_content_balance]"
+  ],
+  "protected_inputs_sha256": {
+    "em_growth_report.json": "942c0e0d0cfec66d00a50146f2cdc7068f37c5036d75a315435a2290cec2abf2",
+    "acceptance_t60.json": "e7a76db4a94c7c35e0fbbd81f156c2fa3ed2bd2e368f2da2bb045d3ccdf1c8f5",
+    "checkpoint.npz": "c376d56be604a4226fae07cf3903c2c5116cf7feb34d714eae7f0f5a34502065",
+    "final_states.npz": "fae599d95a095d2b0a1172bf1d2f3713bba3eed4356d8c74369b57d8d9fc39d8",
+    "diagnostics.jsonl": "9cf0685d28ad07c78a2e600dbdb7b23fd810853a3c13cdcaefe87666700d44bc"
+  },
+  "protected_inputs_unchanged": true,
+  "source_v3_89_sha_unchanged": true,
+  "reflection_tolerance": 1e-12,
+  "power_relative_tolerance": 1e-10,
+  "production_acceptance_replaced": false,
+  "ratio5_launched": false,
+  "limitations": [
+    "prototype does not perform full report hash reconstruction or cross-file checkpoint identity validation; existing read-only loader must retain these gates in an implementation",
+    "sampled power is not exact RK-stage global energy",
+    "no production dispatch/profile code implemented"
+  ]
+}

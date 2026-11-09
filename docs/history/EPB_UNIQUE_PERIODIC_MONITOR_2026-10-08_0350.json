@@ -1,0 +1,41 @@
+{
+  "checked_at_local": "2026-10-08T03:50:15.191340+08:00",
+  "result": "terminal_requires_review",
+  "processes": [],
+  "checkpoint": {
+    "time_s": 5000.0,
+    "step": 20000,
+    "schema_version": 3,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "all_float_arrays_finite": true,
+    "density_minima_m3": {
+      "baseline_density_m3": 15502083.74449005,
+      "column_control_density_m3": 10203468.18638587,
+      "coupled_density_m3": 15514267.672983183
+    }
+  },
+  "diagnostics_latest_time_s": 5000.0,
+  "diagnostic_count": 5000,
+  "maxima": {
+    "dt_reductions": 0,
+    "coupling_relative_residual": 7.734146403287976e-13,
+    "relative_power_pairing_defect": 8.603603701604781e-16,
+    "baseline_cfl": 0.24998031131141327,
+    "column_control_cfl": 0.2498157969801283,
+    "coupled_cfl": 0.4
+  },
+  "latest_dt_s": 0.25,
+  "latest_es_substeps": [
+    2,
+    4
+  ],
+  "latest_es_substep_dt_s": [
+    0.125,
+    0.0625
+  ],
+  "stderr_empty": true,
+  "anomalies": [],
+  "terminal_audit_exists": true,
+  "acceptance_t5000_exists": true,
+  "next_action": "Continue sole driver, no duplicate launch; next check at least30 minutes later. At terminal review strict acceptance and image QA; preserve all archives."
+}

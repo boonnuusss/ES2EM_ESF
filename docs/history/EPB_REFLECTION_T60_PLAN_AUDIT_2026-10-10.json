@@ -1,0 +1,103 @@
+{
+  "created_local": "2026-10-10T18:10:40.995246+08:00",
+  "passed": true,
+  "matched_archive_checks": [
+    {
+      "artifact": "checkpoint.npz",
+      "time_s": 60.0,
+      "w_minus_exact_zero_both": true,
+      "first_two_plus_cells_byte_exact": false,
+      "first_two_plus_max_abs_difference": 2.7755575615628914e-17
+    },
+    {
+      "artifact": "final_states.npz",
+      "time_s": 60.0,
+      "w_minus_exact_zero_both": true,
+      "first_two_plus_cells_byte_exact": false,
+      "first_two_plus_max_abs_difference": 2.7755575615628914e-17
+    }
+  ],
+  "isolated_pulse_rows": [
+    {
+      "reflection": 0.0,
+      "max_returned": 0.0,
+      "min_returned": 0.0,
+      "signed_sum_returned": 0.0,
+      "numerical_opposite_sign_lobe_recorded": true,
+      "analytic_reflection_energy": 0.0,
+      "analytic_absorption": 1.0
+    },
+    {
+      "reflection": 0.6666666666666666,
+      "max_returned": 0.6136248599376662,
+      "min_returned": -0.00014614412115078544,
+      "signed_sum_returned": 7.5624467763074446,
+      "numerical_opposite_sign_lobe_recorded": true,
+      "analytic_reflection_energy": 0.4444444444444444,
+      "analytic_absorption": 0.5555555555555556
+    },
+    {
+      "reflection": -0.6666666666666666,
+      "max_returned": 0.00014614412115078544,
+      "min_returned": -0.6136248599376662,
+      "signed_sum_returned": -7.5624467763074446,
+      "numerical_opposite_sign_lobe_recorded": true,
+      "analytic_reflection_energy": 0.4444444444444444,
+      "analytic_absorption": 0.5555555555555556
+    }
+  ],
+  "source_files_sha256_verified": 89,
+  "cases": {
+    "ratio0p2": {
+      "ratio": 0.2,
+      "conductance_s": 0.15915494309189537,
+      "reflection": 0.6666666666666666,
+      "configuration_hash": "e33ebcff1629897ef7de6a09d33f00aaa9c2cf3253da1d356127c688e2f6bb63",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\load_ratio0p2_li_20261010.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\load_ratio0p2_em_t60_20261010.json",
+      "driver": "<ORIGINAL_CHECKOUT>\\tmp\\run_load_ratio0p2_t60_20261010.py",
+      "output_dir": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\load_ratio0p2_x100_y401_k8_three_track_20261010",
+      "status": "prepared_not_started",
+      "initial_rhs_finite": true,
+      "initial_column_ES_EM_RHS_equal": true
+    },
+    "ratio5": {
+      "ratio": 5.0,
+      "conductance_s": 3.978873577297384,
+      "reflection": -0.6666666666666666,
+      "configuration_hash": "ceeb4bfc8e590bf654acc76395eeb5ea5032a70470859fe2d27d9c0c4f94e8b1",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\load_ratio5_li_20261010.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\load_ratio5_em_t60_20261010.json",
+      "driver": "<ORIGINAL_CHECKOUT>\\tmp\\run_load_ratio5_t60_20261010.py",
+      "output_dir": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\load_ratio5_x100_y401_k8_three_track_20261010",
+      "status": "prepared_not_started",
+      "initial_rhs_finite": true,
+      "initial_column_ES_EM_RHS_equal": true
+    }
+  },
+  "source_snapshot": "tmp/acceptance_exb_source_v3_20261010_sha256.json",
+  "production_started": false,
+  "limitations": [
+    "terminal cp/final w_minus exactly zero; near-Li w_plus differs by at most2.7756e-17V, not bit-identical; density-only snapshots cannot establish full time line history",
+    "isolated pulse is not EPB production or global energy acceptance",
+    "initial preflight at zero gain; active reflected feedback requires completed coupled short stage",
+    "equivalent load not measured E-region conductance"
+  ],
+  "pulse_scope": {
+    "cells": 160,
+    "length_km": 20000,
+    "VA_km_s": 1000,
+    "duration_s": 7,
+    "CFL": 0.4,
+    "not_production_grid": true,
+    "opposite_sign_lobe_peak_fraction": 0.00023816525485233954,
+    "pointwise_sign_preservation": false,
+    "boundary_passivity_checked": true,
+    "global_energy_exactness_claim": false
+  },
+  "screening_notes": [
+    "Initial attempt to inspect line variables in snapshots rejected: snapshots contain density only; corrected to cp/final terminal artifacts.",
+    "Near-Li byte equality assumption rejected at2.7756e-17V; retained measured difference rather than asserting equality.",
+    "Isolated reflected pulse is not pointwise sign-preserving: small opposite sign lobe recorded; dominant peak and signed integral have expected phase. No production acceptance threshold changed."
+  ]
+}

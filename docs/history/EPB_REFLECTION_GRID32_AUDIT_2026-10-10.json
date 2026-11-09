@@ -1,0 +1,52 @@
+{
+  "created_local": "2026-10-10T19:08:31.778928+08:00",
+  "passed": true,
+  "cells": 32,
+  "dt_s": 0.25,
+  "line_CFL": 0.4,
+  "duration_s": 7,
+  "rows": [
+    {
+      "reflection": 0.0,
+      "return_max": 0.0,
+      "return_min": 0.0,
+      "signed_return_sum": 0.0,
+      "opposite_sign_lobe_fraction": 0.0,
+      "finite": true,
+      "passive_boundary_samples": 28,
+      "min_normalized_absorbed_flux": 4.188281982684163e-19,
+      "characteristic_quadratic_norm_initial": 1.6032847081785315,
+      "characteristic_quadratic_norm_final": 0.0003284860737751414
+    },
+    {
+      "reflection": 0.6666666666666666,
+      "return_max": 0.3185089858450688,
+      "return_min": -0.0018510966783035795,
+      "signed_return_sum": 1.4989256491641303,
+      "opposite_sign_lobe_fraction": 0.005811756529858162,
+      "finite": true,
+      "passive_boundary_samples": 28,
+      "min_normalized_absorbed_flux": 2.3268233237134244e-19,
+      "characteristic_quadratic_norm_initial": 1.6032847081785315,
+      "characteristic_quadratic_norm_final": 0.37665997720074684
+    },
+    {
+      "reflection": -0.6666666666666666,
+      "return_max": 0.0018510966783035795,
+      "return_min": -0.3185089858450688,
+      "signed_return_sum": -1.4989256491641303,
+      "opposite_sign_lobe_fraction": 0.005811756529858162,
+      "finite": true,
+      "passive_boundary_samples": 28,
+      "min_normalized_absorbed_flux": 2.3268233237134244e-19,
+      "characteristic_quadratic_norm_initial": 1.6032847081785315,
+      "characteristic_quadratic_norm_final": 0.37665997720074684
+    }
+  ],
+  "scope": "isolated line pulse, no EPB density trajectory; boundary quadratic flux only, not physical full-system RK-stage energy audit",
+  "limitations": [
+    "pulse width0.04L spans only1.28cells, underresolved; waveform/convergence not established",
+    "opposite-sign lobes retained, no clipping or acceptance threshold changes",
+    "full reflected FAC response remains to be validated by coupled60s stage"
+  ]
+}

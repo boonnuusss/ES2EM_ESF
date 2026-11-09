@@ -1,0 +1,61 @@
+{
+  "created_local": "2026-10-10T21:13:26.965837+08:00",
+  "passed": false,
+  "array_audit_passed": true,
+  "time_s": 60,
+  "step": 240,
+  "configuration_hash": "e33ebcff1629897ef7de6a09d33f00aaa9c2cf3253da1d356127c688e2f6bb63",
+  "terminal_density_and_line_arrays_byte_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": [
+    "required criterion failed [matched_remote_boundary]"
+  ],
+  "strict_warnings": 2,
+  "two_ES_terminal_and_full_history_byte_exact_vs_B": true,
+  "matched_snapshot_ES_byte_exact_count": 7,
+  "ES_diagnostic_records_exact": 60,
+  "visual_qa_done": true,
+  "qa": "actual view_image: smooth early maps and readable curves; no clear Y; not mature morphology evidence",
+  "comparison_vs_B": {
+    "baseline_density_m3": {
+      "density_relative_l2": 0.0,
+      "structure_relative_l2": 0.0,
+      "gamma_short_s_inverse": -0.00039243112620523745,
+      "gamma_B_s_inverse": -0.00039243112620523745,
+      "gamma_relative_difference": 0.0
+    },
+    "column_control_density_m3": {
+      "density_relative_l2": 0.0,
+      "structure_relative_l2": 0.0,
+      "gamma_short_s_inverse": 0.0004058784302823924,
+      "gamma_B_s_inverse": 0.0004058784302823924,
+      "gamma_relative_difference": 0.0
+    },
+    "coupled_density_m3": {
+      "density_relative_l2": 0.00011727803677391959,
+      "structure_relative_l2": 0.0016256566868294727,
+      "gamma_short_s_inverse": 0.00032244146091025676,
+      "gamma_B_s_inverse": 0.0003022244741147432,
+      "gamma_relative_difference": 0.06689394316834152
+    },
+    "pure_EM": {
+      "relative_l2": 0.20722299660462834
+    },
+    "geometry": {
+      "relative_l2": 0.0
+    }
+  },
+  "acceptance_policy_incompatibility": "strict profile requires matched R0; conductance R+2/3 fails original criterion; no criteria or threshold edits",
+  "production_rerun": false,
+  "return_wave": {
+    "w_minus_max_abs_v": 4.949183388622176,
+    "remote_power_min_w": 0.0,
+    "remote_power_max_w": 1014.0327129536022,
+    "reflection": 0.6666666666666666,
+    "sampling": "accepted-step representative stage, not RK-stage global energy"
+  },
+  "source_v3_sha_verified": true,
+  "archive_gate_passed": false,
+  "ratio5_launched": false
+}

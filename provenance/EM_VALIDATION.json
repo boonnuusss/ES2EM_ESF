@@ -1,0 +1,192 @@
+{
+  "format": "esf_reduced_em_validation_v2",
+  "generated_at_utc": "2026-11-09T06:31:49.265840+00:00",
+  "all_pass": true,
+  "levels": [
+    {
+      "level": 1,
+      "name": "uniform_va_wave_accuracy_and_walen_relation",
+      "status": "pass",
+      "metric": 0.8807347393958015,
+      "threshold": 1.0,
+      "criterion": "<=",
+      "details": {
+        "coarse_l2_error": 0.05507594999292515,
+        "fine_l2_error": 0.013893837225324574,
+        "observed_spatial_order": 1.9869773743687331,
+        "spatial_order_threshold": 1.75,
+        "walen_defect": 2.4161902126951447e-17,
+        "walen_threshold": 1e-13,
+        "formal_snapshot_used": false
+      }
+    },
+    {
+      "level": 2,
+      "name": "conductance_load_analytic_reflection",
+      "status": "pass",
+      "metric": 0.0,
+      "threshold": 1e-14,
+      "criterion": "<=",
+      "details": {
+        "alfven_conductance_s": 0.7957747154594768,
+        "pedersen_conductance_s": 2.3873241463784303,
+        "measured_reflection": -0.5,
+        "analytic_reflection": -0.5
+      }
+    },
+    {
+      "level": 3,
+      "name": "nonuniform_va_impedance_jump_propagation",
+      "status": "pass",
+      "metric": 0.014918014468150054,
+      "threshold": 0.03,
+      "criterion": "<=",
+      "details": {
+        "cells": 160,
+        "va_left_m_s": 1000000.0,
+        "va_right_m_s": 500000.0,
+        "measured_reflection": -0.3184153188651833,
+        "analytic_reflection": -0.33333333333333337
+      }
+    },
+    {
+      "level": 4,
+      "name": "lossless_energy_and_poynting_joule_budget",
+      "status": "pass",
+      "metric": 0.00026645352591003757,
+      "threshold": 1.0,
+      "criterion": "<=",
+      "details": {
+        "initial_energy_j_m2": 2.3082440340296447e-07,
+        "final_energy_j_m2": 2.3082440340296476e-07,
+        "relative_energy_drift": 1.3322676295501878e-15,
+        "energy_drift_threshold": 5e-12,
+        "relative_power_defect": 0.0,
+        "power_defect_threshold": 1e-13
+      }
+    },
+    {
+      "level": 5,
+      "name": "finite_line_va_infinity_to_laundal_dynamic_endpoint",
+      "status": "pass",
+      "metric": 0.9949995694561765,
+      "threshold": 1.0,
+      "criterion": "<=",
+      "details": {
+        "pedersen_conductance_s": 4.0,
+        "hall_conductance_s": 2.4999999999999996,
+        "conductance_relative_error": 1.4710425655461434e-16,
+        "conductance_error_threshold": 2e-13,
+        "slope_ratio_errors": [
+          4.56927591141465e-06,
+          1.142316237601193e-06,
+          2.8557888809288556e-07
+        ],
+        "minimum_quadratic_order": 2.000000865415095,
+        "order_threshold": 1.99,
+        "finest_slope_ratio_error": 2.8557888809288556e-07,
+        "finest_error_threshold": 3e-07
+      }
+    },
+    {
+      "level": 6,
+      "name": "li_electrostatic_limit_adapter",
+      "status": "pass",
+      "metric": 0.0,
+      "threshold": 0.0,
+      "criterion": "<=",
+      "details": {
+        "grid": [
+          9,
+          9
+        ],
+        "pardiso_used": false,
+        "density_relative_defect": 0.0,
+        "electromagnetic_tendency_defect": 0.0
+      }
+    },
+    {
+      "level": 7,
+      "name": "frozen_li_snapshot_one_way_alfven_drive",
+      "status": "pass",
+      "metric": 0.0,
+      "threshold": 0.0,
+      "criterion": "<=",
+      "details": {
+        "closure_calls": 1,
+        "line_calls": 1,
+        "snapshot_mutation": 0.0,
+        "feedback_path_present": false
+      }
+    },
+    {
+      "level": 8,
+      "name": "controlled_two_way_feedback_toy_closure",
+      "status": "pass",
+      "metric": 2.180684118910106e-14,
+      "threshold": 1e-10,
+      "criterion": "<=",
+      "details": {
+        "scope": "control_layer_and_toy_closure_only",
+        "physical_dimensional_fac_to_li_closure_complete": false,
+        "formal_nonlinear_epb_two_way_run_complete": false,
+        "fixed_point_iterations": 29,
+        "fixed_point_relative_error": 2.180684118910106e-14,
+        "zero_net_fac_defect": 7.93016446160826e-18
+      }
+    },
+    {
+      "level": 9,
+      "name": "dimensional_fac_laplacian_nonlinear_feedback",
+      "status": "pass",
+      "metric": 0.0,
+      "threshold": 0.0,
+      "criterion": "<=",
+      "details": {
+        "scope": "tiny_grid_physical_reduced_em_feedback",
+        "physical_dimensional_fac_to_li_closure_complete": true,
+        "transverse_laplacian_fac_mapping_complete": true,
+        "small_grid_nonlinear_two_way_run_complete": true,
+        "formal_nonlinear_epb_two_way_run_complete": false,
+        "parallel_mass_transport_included": false,
+        "grid": [
+          9,
+          9,
+          8
+        ],
+        "retained_transverse_modes": 3,
+        "steps": 3,
+        "final_time_s": 0.06,
+        "criteria": {
+          "exact_es_density_rhs": true,
+          "coupling_converged": true,
+          "transverse_return_current": true,
+          "modal_grid_power_adjoint": true,
+          "positive_density": true,
+          "nonlinear_density_feedback_detected": true
+        },
+        "coupling_iterations": 1,
+        "coupling_relative_residual": 1.945234571439172e-15,
+        "relative_net_current_gradient": 3.867007967417513e-17,
+        "relative_power_pairing_defect": 2.1687576764622472e-16,
+        "relative_density_trajectory_difference": 8.836564698252109e-10,
+        "relative_density_mode_amplitude_difference": 1.3960729538138304e-08,
+        "minimum_density_m3": 468475888341.15216,
+        "pardiso_used": false
+      }
+    }
+  ],
+  "execution_scope": {
+    "formal_li_snapshot_used": false,
+    "pardiso_used": false,
+    "long_epb_simulation_used": false,
+    "stages_1_through_7": "physical_reduced_em_components",
+    "stage_8": "controlled_feedback_layer_with_toy_closure",
+    "stage_9": "dimensional_transverse_modal_fac_and_tiny_nonlinear_feedback"
+  },
+  "remaining_work": [
+    "add two hemispheres and a metric/SBP field-line geometry",
+    "add common-mode parallel mass transport for a full 3-D plasma model",
+    "run resolution studies before a formal 201x401 nonlinear EPB comparison"
+  ]
+}

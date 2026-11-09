@@ -1,0 +1,111 @@
+{
+  "status": "control_design_prepared_no_production_started",
+  "cases": [
+    {
+      "case": "A",
+      "nx": 100,
+      "ny": 401,
+      "fac_cutoff": [
+        4,
+        4
+      ],
+      "mode_count": 44,
+      "configuration_hash": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+      "status": "prepared_not_started",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\matched_period_A_li_20261008.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\matched_period_A_em_20261008.json",
+      "output_dir": "<ORIGINAL_CHECKOUT>/output/em_growth/matched_period_x100_y401_k4_three_track_20261008"
+    },
+    {
+      "case": "B",
+      "nx": 100,
+      "ny": 401,
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "mode_count": 152,
+      "configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+      "status": "prepared_not_started",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\matched_period_B_li_20261008.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\matched_period_B_em_20261008.json",
+      "output_dir": "<ORIGINAL_CHECKOUT>/output/em_growth/matched_period_x100_y401_k8_three_track_20261008"
+    },
+    {
+      "case": "C",
+      "nx": 200,
+      "ny": 401,
+      "fac_cutoff": [
+        4,
+        4
+      ],
+      "mode_count": 44,
+      "configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+      "status": "prepared_not_started",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\matched_period_C_li_20261008.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\matched_period_C_em_20261008.json",
+      "output_dir": "<ORIGINAL_CHECKOUT>/output/em_growth/matched_period_x200_y401_k4_three_track_20261008"
+    },
+    {
+      "case": "D",
+      "nx": 200,
+      "ny": 401,
+      "fac_cutoff": [
+        8,
+        8
+      ],
+      "mode_count": 152,
+      "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+      "status": "reuse_completed_5000s",
+      "output_dir": "output/em_growth/unique_periodic_200x401_k8_three_track_20261006"
+    }
+  ],
+  "fixed": {
+    "x_period_km": 250,
+    "ny": 401,
+    "dy_km": 1,
+    "y_coordinates_km": [
+      250,
+      650
+    ],
+    "modal_vertical_extent_km": 401,
+    "modal_area_m2": 100250000000,
+    "three_tracks": "local_column_em",
+    "feedback_gain": 1,
+    "right_boundary": "matched"
+  },
+  "contrasts": {
+    "modal_fixed_grid": [
+      "B-A",
+      "D-C"
+    ],
+    "density_x_fixed_cutoff": [
+      "C-A",
+      "D-B"
+    ],
+    "synchronous_diagonal": "D-A",
+    "interaction": "D-C-B+A"
+  },
+  "new_confound": {
+    "source": "ModalBasis._y_component and domain_area_m2",
+    "legacy_coarse_modal_extent_km": 402,
+    "corrected_fine_modal_extent_km": 401,
+    "coarse_area_relative_difference": 0.0024937655860348684,
+    "meaning": "ny*dy, not coordinate span (ny-1)*dy; same mode index has different vertical scale and area normalization"
+  },
+  "evaluation": [
+    "60s stability/terminal audit before any extension",
+    "300s early and3150s mature common-time comparisons against archived D",
+    "5000s secondary only: column ES reaches650km boundary",
+    "uniform-time logRMS OLS; common physical nodes and native-grid norms",
+    "density, both difference fields, FAC modal/power budget and morphology",
+    "unchanged residual/pairing/CFL/positivity and open-boundary caveats"
+  ],
+  "limitations": [
+    "This isolates horizontal density resolution and FAC cutoff, not full2D convergence.",
+    "Only two levels: factorial attribution cannot establish asymptotic convergence order.",
+    "Full vertical refinement needs a separately audited coordinate/basis/area convention; do not silently alter existing hashes.",
+    "A/B/C require independent initial states and their own hashes; never transplant D checkpoint.",
+    "No driver launched; no existing output changed; failed legacy fine verdict retained."
+  ]
+}

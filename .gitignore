@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+*.egg-info/
+output/
+.runtime/
+.env
+.env.*
+*.mat
+*.npz
+*.npy
+*.h5
+*.hdf5
+*.mp4
+*.log

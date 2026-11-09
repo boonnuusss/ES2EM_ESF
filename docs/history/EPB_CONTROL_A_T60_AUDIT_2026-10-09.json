@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "time_s": 60,
+  "step": 240,
+  "configuration_hash": "15f3e86753a082c729152f9ec6b78d688f49fd414ee5716b04b0fe9efd6cdfcd",
+  "terminal_arrays_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 2,
+  "visual_qa_done": true,
+  "finding": "Early smooth perturbation, no clear Y; figure renders correctly.",
+  "runtime_provenance": "<ORIGINAL_CHECKOUT>\\tmp\\em_bifurcation_control_A_t60_provenance_20261009.json"
+}

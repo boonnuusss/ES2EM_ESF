@@ -1,0 +1,18 @@
+{
+  "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "packages": {
+    "numpy": "2.5.1",
+    "scipy": "1.18.0",
+    "matplotlib": "3.10.9",
+    "h5py": "3.11.0",
+    "Pillow": "10.3.0",
+    "pyamg": "5.3.0",
+    "pypardiso": "0.4.7",
+    "mkl": "2026.1.0",
+    "pytest": "9.1.1"
+  },
+  "dependency_source": "Existing local .deps; no third-party binaries included in the release. Clean pip installation on a new computer not yet tested.",
+  "numerical_threads": 1,
+  "validated_date": "2026-11-09"
+}

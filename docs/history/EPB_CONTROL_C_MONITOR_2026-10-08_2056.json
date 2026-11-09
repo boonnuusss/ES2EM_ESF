@@ -1,0 +1,46 @@
+{
+  "checked_at_local": "2026-10-08T20:56:59.149046+08:00",
+  "result": "running_stable",
+  "processes": [
+    {
+      "ProcessId": 20800,
+      "CommandLine": "\"C:\\Users\\12928\\AppData\\Local\\Programs\\Python\\Python312\\python.exe\" -u <ORIGINAL_CHECKOUT>/tmp/run_em_bifurcation_control_C_t3150_20261008.py"
+    }
+  ],
+  "checkpoint": {
+    "time_s": 2375.0,
+    "step": 9500,
+    "schema_version": 3,
+    "configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+    "all_float_arrays_finite": true,
+    "density_minima_m3": {
+      "baseline_density_m3": 15289857.578436254,
+      "column_control_density_m3": 5692353.445476452,
+      "coupled_density_m3": 14421986.362194369
+    }
+  },
+  "diagnostics_latest_time_s": 2392.0,
+  "diagnostic_count": 2392,
+  "maxima": {
+    "dt_reductions": 0,
+    "coupling_relative_residual": 5.985239418293457e-13,
+    "relative_power_pairing_defect": 9.49982288235761e-16,
+    "baseline_cfl": 0.19068467679405482,
+    "column_control_cfl": 0.21286006541318842,
+    "coupled_cfl": 0.4
+  },
+  "latest_dt_s": 0.25,
+  "latest_es_substeps": [
+    1,
+    1
+  ],
+  "latest_es_substep_dt_s": [
+    0.25,
+    0.25
+  ],
+  "stderr_empty": true,
+  "anomalies": [],
+  "terminal_audit_exists": false,
+  "acceptance_t3150_exists": false,
+  "next_action": "Continue sole driver, no duplicate launch; next check at least30 minutes later. At terminal review strict acceptance and image QA; preserve all archives."
+}

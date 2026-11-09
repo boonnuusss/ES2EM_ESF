@@ -1,0 +1,61 @@
+{
+  "created_local": "2026-10-10T10:08:38.218338+08:00",
+  "gate_preflight_passed": true,
+  "source_files_sha256_verified": 89,
+  "tests_passed_prior": 14,
+  "unchanged_li_sha256": "04e7db8fe3620d2c4895c7c4890024b6dad129fc4cf45d0f6270268082d799c9",
+  "zero_reference": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\matched_period_x100_y401_k8_three_track_20261008\\archive_t60",
+  "cases": {
+    "10": {
+      "drift_y_m_s": 10,
+      "configuration_hash": "2fc21197d5a2a30fc4e3f1bbf06b60951106956ec41d7b82d62e8bb9b933f527",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_y10_li_20261010.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_y10_em_t60_20261010.json",
+      "driver": "<ORIGINAL_CHECKOUT>\\tmp\\run_background_exb_y10_t60_20261010.py",
+      "output_dir": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\background_exb_y10_x100_y401_k8_three_track_20261010",
+      "initial_rhs_finite": true,
+      "initial_columnES_EM_rhs_byte_exact": true,
+      "initial_cfl": {
+        "localES": 0.0186090434630146,
+        "columnES": 0.005159580610634214,
+        "EM_density": 0.005159580610634214,
+        "EM_line": 0.4
+      },
+      "launch_status": "prepared_not_started"
+    },
+    "20": {
+      "drift_y_m_s": 20,
+      "configuration_hash": "fdafd006233807f6aa30f885b467753011e5fb260f7cfd71731bbcc5b3bc9112",
+      "li_config": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_y20_li_20261010.json",
+      "em_config": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_y20_em_t60_20261010.json",
+      "driver": "<ORIGINAL_CHECKOUT>\\tmp\\run_background_exb_y20_t60_20261010.py",
+      "output_dir": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\background_exb_y20_x100_y401_k8_three_track_20261010",
+      "initial_rhs_finite": true,
+      "initial_columnES_EM_rhs_byte_exact": true,
+      "initial_cfl": {
+        "localES": 0.0211090434630146,
+        "columnES": 0.007659580610634213,
+        "EM_density": 0.007659580610634213,
+        "EM_line": 0.4
+      },
+      "launch_status": "prepared_not_started"
+    }
+  },
+  "production_started": false,
+  "limitations": [
+    "imposed density drift only; no background-current closure",
+    "60s not mature Y evidence",
+    "zero baseline uses archived source; default-zero regression verified"
+  ],
+  "updated_local": "2026-10-10T10:10:45.782397+08:00",
+  "source_manifest": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_source_v2_20261010_sha256.json",
+  "source_zip": "<ORIGINAL_CHECKOUT>\\tmp\\background_exb_source_v2_20261010.zip",
+  "nonzero_integer_float_hash_identical": true,
+  "tests_passed_after_revision": 14,
+  "launch_order": [
+    10,
+    20
+  ],
+  "stage_end_s": 60,
+  "launch_gate": "Only y10 first; y20 waits for independent audit, strict acceptance, view_image QA and SHA256 archive of y10; no automatic continuation beyond60."
+}

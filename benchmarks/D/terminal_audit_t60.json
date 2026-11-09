@@ -1,0 +1,18 @@
+{
+  "pass": true,
+  "time_s": 60.0,
+  "step": 240,
+  "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+  "terminal_density_and_line_arrays_exact": true,
+  "all_float_arrays_finite": true,
+  "density_minima_m3": {
+    "baseline_density_m3": 15289847.775300892,
+    "column_control_density_m3": 15289847.774645373,
+    "coupled_density_m3": 15289847.803776873
+  },
+  "stored_shape": [
+    401,
+    200
+  ],
+  "period_x_km": 250.0
+}

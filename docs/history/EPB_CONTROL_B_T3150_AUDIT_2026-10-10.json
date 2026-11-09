@@ -1,0 +1,216 @@
+{
+  "checked_local": "2026-10-10T07:08:34.007879+08:00",
+  "passed": true,
+  "time_s": 3150,
+  "step": 12600,
+  "configuration_hash": "f69eff8a38826097763c5e903a692c78fadce52184c6386844492876e532918a",
+  "terminal_arrays_exact": true,
+  "finite_positive": true,
+  "dt_reductions": 0,
+  "strict_failures": 0,
+  "strict_warnings": 4,
+  "visual_qa_done": true,
+  "finding": "B and A ES show broad branches; B/A/D EM remain broad smooth without clear Y. D ES has finer fingers.",
+  "comparisons": {
+    "B_vs_A": {
+      "spatial": {
+        "baseline_density_m3": {
+          "density_relative_l2": 0.0,
+          "structure_relative_l2": 0.0,
+          "density_byte_exact": true
+        },
+        "column_control_density_m3": {
+          "density_relative_l2": 0.0,
+          "structure_relative_l2": 0.0,
+          "density_byte_exact": true
+        },
+        "coupled_density_m3": {
+          "density_relative_l2": 0.00784430288434472,
+          "structure_relative_l2": 0.02871458601822103,
+          "density_byte_exact": false
+        },
+        "pure_EM": {
+          "relative_l2": 0.02121928314988077
+        },
+        "geometry": {
+          "relative_l2": 0.0
+        }
+      },
+      "growth_window_s": [
+        300,
+        3150
+      ],
+      "growth": {
+        "baseline_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006400887513707974,
+          "rhs_gamma_s_inverse": 0.0006400887513707974,
+          "lhs_relative_to_rhs": 0.0
+        },
+        "column_control_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006685798679702023,
+          "rhs_gamma_s_inverse": 0.0006685798679702023,
+          "lhs_relative_to_rhs": 0.0
+        },
+        "coupled_density_m3": {
+          "lhs_gamma_s_inverse": 0.0004095824637125564,
+          "rhs_gamma_s_inverse": 0.0004157578486889497,
+          "lhs_relative_to_rhs": -0.014853321460717495
+        }
+      }
+    },
+    "B_vs_D": {
+      "spatial": {
+        "baseline_density_m3": {
+          "density_relative_l2": 0.257062713021444,
+          "structure_relative_l2": 0.6227614568507768,
+          "density_byte_exact": false
+        },
+        "column_control_density_m3": {
+          "density_relative_l2": 0.14789353104428996,
+          "structure_relative_l2": 0.3304491658840179,
+          "density_byte_exact": false
+        },
+        "coupled_density_m3": {
+          "density_relative_l2": 0.000288052277897336,
+          "structure_relative_l2": 0.0011366552906456285,
+          "density_byte_exact": false
+        },
+        "pure_EM": {
+          "relative_l2": 0.42900156398085826
+        },
+        "geometry": {
+          "relative_l2": 0.694384140164566
+        }
+      },
+      "growth_window_s": [
+        300,
+        3150
+      ],
+      "growth": {
+        "baseline_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006400887513707974,
+          "rhs_gamma_s_inverse": 0.0006432559963949802,
+          "lhs_relative_to_rhs": -0.0049237706946115845
+        },
+        "column_control_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006685798679702023,
+          "rhs_gamma_s_inverse": 0.0006701987976966838,
+          "lhs_relative_to_rhs": -0.002415596285826438
+        },
+        "coupled_density_m3": {
+          "lhs_gamma_s_inverse": 0.0004095824637125564,
+          "rhs_gamma_s_inverse": 0.0004099067570776091,
+          "lhs_relative_to_rhs": -0.0007911393492625596
+        }
+      }
+    },
+    "D_vs_C": {
+      "spatial": {
+        "baseline_density_m3": {
+          "density_relative_l2": 0.000426119771868265,
+          "structure_relative_l2": 0.001145303475775201,
+          "density_byte_exact": false
+        },
+        "column_control_density_m3": {
+          "density_relative_l2": 0.06576951507502454,
+          "structure_relative_l2": 0.14943836218049109,
+          "density_byte_exact": false
+        },
+        "coupled_density_m3": {
+          "density_relative_l2": 0.007888678837607249,
+          "structure_relative_l2": 0.028856549636738036,
+          "density_byte_exact": false
+        },
+        "pure_EM": {
+          "relative_l2": 0.19351023155335786
+        },
+        "geometry": {
+          "relative_l2": 0.2149608766076391
+        }
+      },
+      "growth_window_s": [
+        300,
+        3150
+      ],
+      "growth": {
+        "baseline_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006432559963949802,
+          "rhs_gamma_s_inverse": 0.0006432563745785779,
+          "lhs_relative_to_rhs": -5.879204818537431e-07
+        },
+        "column_control_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006701987976966838,
+          "rhs_gamma_s_inverse": 0.0006702030129833562,
+          "lhs_relative_to_rhs": -6.28956687864779e-06
+        },
+        "coupled_density_m3": {
+          "lhs_gamma_s_inverse": 0.0004099067570776091,
+          "rhs_gamma_s_inverse": 0.00041610062311785606,
+          "lhs_relative_to_rhs": -0.014885500516284123
+        }
+      }
+    },
+    "C_vs_A": {
+      "spatial": {
+        "baseline_density_m3": {
+          "density_relative_l2": 0.2563718533548636,
+          "structure_relative_l2": 0.6152909847958513,
+          "density_byte_exact": false
+        },
+        "column_control_density_m3": {
+          "density_relative_l2": 0.14885101691777838,
+          "structure_relative_l2": 0.3308529933290419,
+          "density_byte_exact": false
+        },
+        "coupled_density_m3": {
+          "density_relative_l2": 0.000332581979216838,
+          "structure_relative_l2": 0.0012915046863231927,
+          "density_byte_exact": false
+        },
+        "pure_EM": {
+          "relative_l2": 0.4457189883774816
+        },
+        "geometry": {
+          "relative_l2": 0.7822013121885291
+        }
+      },
+      "growth_window_s": [
+        300,
+        3150
+      ],
+      "growth": {
+        "baseline_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006432563745785779,
+          "rhs_gamma_s_inverse": 0.0006400887513707974,
+          "lhs_relative_to_rhs": 0.004948725002582588
+        },
+        "column_control_density_m3": {
+          "lhs_gamma_s_inverse": 0.0006702030129833562,
+          "rhs_gamma_s_inverse": 0.0006685798679702023,
+          "lhs_relative_to_rhs": 0.002427750357009373
+        },
+        "coupled_density_m3": {
+          "lhs_gamma_s_inverse": 0.00041610062311785606,
+          "rhs_gamma_s_inverse": 0.0004157578486889497,
+          "lhs_relative_to_rhs": 0.0008244569043911465
+        }
+      }
+    }
+  },
+  "factorial_interaction": {
+    "baseline_density_m3": {
+      "D_minus_C_minus_B_plus_A_relative_to_C_l2": 0.00041597167931033287
+    },
+    "column_control_density_m3": {
+      "D_minus_C_minus_B_plus_A_relative_to_C_l2": 0.06576764113422814
+    },
+    "coupled_density_m3": {
+      "D_minus_C_minus_B_plus_A_relative_to_C_l2": 7.109421491070821e-05
+    }
+  },
+  "limitations": [
+    "A/B single-thread versus historical C/D numerical environment confounds grid and interaction inference.",
+    "Two levels are not strict convergence; ES differences require separate treatment.",
+    "Sampled energy is not exact RK-stage work; open particle drift is not closed-system conservation."
+  ]
+}

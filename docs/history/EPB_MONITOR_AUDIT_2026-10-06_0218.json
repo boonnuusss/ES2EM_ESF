@@ -1,0 +1,70 @@
+{
+  "schema_version": 3,
+  "time_s": 2125.0,
+  "step": 8500,
+  "configuration_hash": "f7aecc67b3ddaae0c9c6325d0ef6fee2b6084060db301c8c4df5d6b9b52ad055",
+  "current_dt_s": 0.25,
+  "dt_reductions": 0,
+  "all_float_arrays_finite": true,
+  "minimum_densities_m3": {
+    "baseline_density_m3": 15289854.086284295,
+    "column_control_density_m3": 7325607.301299235,
+    "coupled_density_m3": 15480346.312585175
+  },
+  "latest_diagnostic": {
+    "time_s": 2134.0,
+    "step": 8536,
+    "current_dt_s": 0.25,
+    "dt_reductions": 0,
+    "coupling_relative_residual": 4.6766282329289485e-12,
+    "relative_power_pairing_defect": 8.590981828269815e-16,
+    "baseline_cfl": 0.11637037419883159,
+    "column_control_cfl": 0.12890584896340707,
+    "coupled_cfl": 0.4,
+    "fac_to_gravity_ratio": 0.24258620233472447
+  },
+  "resume_diagnostic_extrema": {
+    "coupling_relative_residual": 5.064171567004305e-12,
+    "relative_power_pairing_defect": 8.782261834071505e-16,
+    "baseline_cfl": 0.11637037419883159,
+    "column_control_cfl": 0.12890584896340707,
+    "coupled_cfl": 0.4
+  },
+  "diagnostic_times_strictly_increasing": true,
+  "diagnostic_numeric_values_finite": true,
+  "diagnostic_minimum_density_m3": 7242863.283383516,
+  "snapshot_manifest": {
+    "format": "esf_three_track_density_snapshots_v2",
+    "configuration_hash": "f7aecc67b3ddaae0c9c6325d0ef6fee2b6084060db301c8c4df5d6b9b52ad055",
+    "interval_s": 10.0,
+    "file_pattern": "snapshots/snapshot_{index:06d}.npz",
+    "count": 214,
+    "first_time_s": 0.0,
+    "last_time_s": 2130.0,
+    "last_step": 8520,
+    "comparison_tracks": [
+      "local_es",
+      "column_es",
+      "column_em"
+    ],
+    "snapshot_schema_version": 2
+  },
+  "status_not_progress_truth": {
+    "status": "running",
+    "time_s": 1050.0,
+    "step": 4200,
+    "configuration_hash": "f7aecc67b3ddaae0c9c6325d0ef6fee2b6084060db301c8c4df5d6b9b52ad055",
+    "current_dt_s": 0.25,
+    "dt_reductions": 0,
+    "baseline_subcycling_events": 0,
+    "baseline_extra_substeps": 0,
+    "column_control_subcycling_events": 0,
+    "column_control_extra_substeps": 0,
+    "snapshot_count": 106
+  },
+  "timestep_events_tail": [],
+  "stdout_tail": [
+    "Resuming refined run at 1050.0 s"
+  ],
+  "stderr_tail": []
+}

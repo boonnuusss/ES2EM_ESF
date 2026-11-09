@@ -1,0 +1,47 @@
+{
+  "created_local": "2026-10-13T21:37:03.805418+08:00",
+  "tests": {
+    "checks": [
+      "conductance_default",
+      "matched_B",
+      "unknown_profile_rejected",
+      "separate_conductance_pass",
+      "protect_original_output_True",
+      "protect_original_output_False",
+      "reject_right_boundary_conductance_s_-1",
+      "reject_right_boundary_conductance_s_nan",
+      "reject_alfven_speed_km_s_0",
+      "reject_right_boundary_voltage_v_1",
+      "reject_right_boundary_model_fixed_voltage",
+      "reject_scope_remote_boundary_reflection_coefficient",
+      "reject_scope_remote_boundary_conductance_s",
+      "reject_row_remote_boundary_reflection_coefficient",
+      "reject_row_remote_boundary_power_modal_w",
+      "shared_gate_remote_boundary_power_modal_w",
+      "shared_gate_coupled_cfl",
+      "shared_gate_coupling_relative_residual",
+      "physical_hash_tamper_rejected",
+      "cross_file_identity_rejected"
+    ],
+    "count": 20,
+    "passed": true,
+    "original_verdict_preserved": true,
+    "independent_verdict": true,
+    "production_rerun": false
+  },
+  "independent_profile": "equivalent_passive_conductance_t60_v1",
+  "independent_pass": true,
+  "independent_failures": [],
+  "independent_warnings": [
+    "near limit [column_em_combined_cfl]",
+    "raw content drift is diagnostic only for an open vertical boundary [column_content_balance]"
+  ],
+  "original_matched_failures": [
+    "required criterion failed [matched_remote_boundary]"
+  ],
+  "protected_original_inputs_sha_unchanged": true,
+  "source_snapshot": "tmp/conductance_acceptance_source_v4_20261013_sha256.json",
+  "production_rerun": false,
+  "ratio5_launched": false,
+  "archive_done": false
+}

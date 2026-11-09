@@ -1,0 +1,135 @@
+{
+  "checked_local": "2026-10-09T01:26:23.309543+08:00",
+  "scope": "Four separate frozen2500s columnES-input evaluations,3 RHS calls each; no integration/checkpoint change.",
+  "runs": {
+    "C_threads1": {
+      "case": "C",
+      "configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+      "MKL_NUM_THREADS": "1",
+      "input_snapshot": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\matched_period_x200_y401_k4_three_track_20261008\\archive_t3150\\snapshots\\snapshot_000250.npz",
+      "input_sha256": "5b3f2297e534f92a6532ef016f04a80a67e309c431f93b70dcfba356ec28fb84",
+      "repeat_rhs_relative_l2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "potential_residuals": [
+        5.009317377905523e-13,
+        5.009317377905523e-13,
+        5.009317377905523e-13
+      ],
+      "numpy_version": "2.5.1",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "source_sha256": {
+        "em_growth.py": "e0b2bc5023451e30104c576ebdae6d20bf398485c8ea202cbe6dfe91e2c07f4e",
+        "bidirectional_em.py": "42d71a7dd3a15e5917fde78b02dab469f8769e01a72db94fdb9a977811d1ff65",
+        "fac_closure.py": "164483a6da7ef0a26225f9331fb609f6849b96e64c8388f57c0bce1c3fbdc997",
+        "point_centered_potential.py": "40d5037b24c4aae9a77d47eb94a3300b6189244a0a713bfb994e53d4bd1c3c82"
+      },
+      "integrated_steps": 0,
+      "production_written": false
+    },
+    "D_threads1": {
+      "case": "D",
+      "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+      "MKL_NUM_THREADS": "1",
+      "input_snapshot": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\matched_period_x200_y401_k4_three_track_20261008\\archive_t3150\\snapshots\\snapshot_000250.npz",
+      "input_sha256": "5b3f2297e534f92a6532ef016f04a80a67e309c431f93b70dcfba356ec28fb84",
+      "repeat_rhs_relative_l2": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "potential_residuals": [
+        5.009317377905523e-13,
+        5.009317377905523e-13,
+        5.009317377905523e-13
+      ],
+      "numpy_version": "2.5.1",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "source_sha256": {
+        "em_growth.py": "e0b2bc5023451e30104c576ebdae6d20bf398485c8ea202cbe6dfe91e2c07f4e",
+        "bidirectional_em.py": "42d71a7dd3a15e5917fde78b02dab469f8769e01a72db94fdb9a977811d1ff65",
+        "fac_closure.py": "164483a6da7ef0a26225f9331fb609f6849b96e64c8388f57c0bce1c3fbdc997",
+        "point_centered_potential.py": "40d5037b24c4aae9a77d47eb94a3300b6189244a0a713bfb994e53d4bd1c3c82"
+      },
+      "integrated_steps": 0,
+      "production_written": false
+    },
+    "C_threads10": {
+      "case": "C",
+      "configuration_hash": "90347ce5dc069c5d9a799a589f2997593d1b99478caff6f6c13101d799fb2e5a",
+      "MKL_NUM_THREADS": "10",
+      "input_snapshot": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\matched_period_x200_y401_k4_three_track_20261008\\archive_t3150\\snapshots\\snapshot_000250.npz",
+      "input_sha256": "5b3f2297e534f92a6532ef016f04a80a67e309c431f93b70dcfba356ec28fb84",
+      "repeat_rhs_relative_l2": [
+        0.0,
+        4.550440596166331e-15,
+        4.060199643546385e-15
+      ],
+      "potential_residuals": [
+        5.036135139371854e-13,
+        5.031852755203426e-13,
+        5.013287847502955e-13
+      ],
+      "numpy_version": "2.5.1",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "source_sha256": {
+        "em_growth.py": "e0b2bc5023451e30104c576ebdae6d20bf398485c8ea202cbe6dfe91e2c07f4e",
+        "bidirectional_em.py": "42d71a7dd3a15e5917fde78b02dab469f8769e01a72db94fdb9a977811d1ff65",
+        "fac_closure.py": "164483a6da7ef0a26225f9331fb609f6849b96e64c8388f57c0bce1c3fbdc997",
+        "point_centered_potential.py": "40d5037b24c4aae9a77d47eb94a3300b6189244a0a713bfb994e53d4bd1c3c82"
+      },
+      "integrated_steps": 0,
+      "production_written": false
+    },
+    "D_threads10": {
+      "case": "D",
+      "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+      "MKL_NUM_THREADS": "10",
+      "input_snapshot": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\matched_period_x200_y401_k4_three_track_20261008\\archive_t3150\\snapshots\\snapshot_000250.npz",
+      "input_sha256": "5b3f2297e534f92a6532ef016f04a80a67e309c431f93b70dcfba356ec28fb84",
+      "repeat_rhs_relative_l2": [
+        0.0,
+        4.522356432128348e-15,
+        4.199176159408353e-15
+      ],
+      "potential_residuals": [
+        5.074137959681687e-13,
+        5.043165277056928e-13,
+        5.009926480233596e-13
+      ],
+      "numpy_version": "2.5.1",
+      "python": "3.12.3 (tags/v3.12.3:f6650f9, Apr  9 2024, 14:05:25) [MSC v.1938 64 bit (AMD64)]",
+      "source_sha256": {
+        "em_growth.py": "e0b2bc5023451e30104c576ebdae6d20bf398485c8ea202cbe6dfe91e2c07f4e",
+        "bidirectional_em.py": "42d71a7dd3a15e5917fde78b02dab469f8769e01a72db94fdb9a977811d1ff65",
+        "fac_closure.py": "164483a6da7ef0a26225f9331fb609f6849b96e64c8388f57c0bce1c3fbdc997",
+        "point_centered_potential.py": "40d5037b24c4aae9a77d47eb94a3300b6189244a0a713bfb994e53d4bd1c3c82"
+      },
+      "integrated_steps": 0,
+      "production_written": false
+    }
+  },
+  "comparisons": {
+    "C_threads1_vs_D_threads1": {
+      "array_equal": true,
+      "rhs_relative_l2": 0.0
+    },
+    "C_threads10_vs_D_threads10": {
+      "array_equal": false,
+      "rhs_relative_l2": 4.149274290569737e-15
+    },
+    "C_threads10_vs_C_threads1": {
+      "array_equal": false,
+      "rhs_relative_l2": 2.7696242176207197e-14
+    },
+    "D_threads10_vs_D_threads1": {
+      "array_equal": false,
+      "rhs_relative_l2": 2.75993149922352e-14
+    }
+  },
+  "finding": "Single-thread C/D zeroFAC RHS equal bytewise for this fixed density;10-thread repeat/cross-run RHS differs at roundoff scale with residuals~5e-13. This is a demonstrated source of possible roundoff perturbations, not proof of the historical divergence cause.",
+  "limitation": "Single frozen input, fresh models, no trajectory or solver-history replay; historical runtime/thread records incomplete.",
+  "next": "Archive runtime/source/input provenance for new diagnostics and future A/B runs; separate numerical repeatability uncertainty from modal truncation. No historical hash/arrays changed."
+}

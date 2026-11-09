@@ -1,0 +1,219 @@
+{
+  "checked_at_local": "2026-10-06T14:50:22.188590+08:00",
+  "result": "60s_completed_stage_acceptance_passed_visual_QA_done",
+  "python_process_count": 0,
+  "checkpoint": {
+    "time_s": 60,
+    "step": 240,
+    "schema_version": 3,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "all_float_arrays_finite": true
+  },
+  "terminal_audit": {
+    "pass": true,
+    "time_s": 60.0,
+    "step": 240,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "terminal_density_and_line_arrays_exact": true,
+    "all_float_arrays_finite": true,
+    "density_minima_m3": {
+      "baseline_density_m3": 15289847.775300892,
+      "column_control_density_m3": 15289847.774645373,
+      "coupled_density_m3": 15289847.803776873
+    },
+    "stored_shape": [
+      401,
+      200
+    ],
+    "period_x_km": 250.0
+  },
+  "strict_acceptance_pass": true,
+  "failures": [],
+  "warnings": [
+    "near limit [column_em_combined_cfl]",
+    "raw content drift is diagnostic only for an open vertical boundary [column_content_balance]"
+  ],
+  "numerical_health": {
+    "minimum_dt_s": 0.25,
+    "maximum_baseline_cfl": 0.016042884166050264,
+    "maximum_column_control_cfl": 0.002661354557734652,
+    "maximum_coupled_cfl": 0.4,
+    "maximum_baseline_potential_relative_residual": 5.418175531524226e-13,
+    "maximum_column_control_potential_relative_residual": 5.222276743471242e-13,
+    "maximum_coupled_potential_relative_residual": 6.720588479633116e-13,
+    "maximum_coupling_relative_residual": 6.720588479633116e-13,
+    "minimum_densities_m3": {
+      "local_es": 15289847.775300892,
+      "column_es": 15289847.774645373,
+      "column_em": 15289847.803776873
+    },
+    "all_final_density_values_finite": true,
+    "dt_reductions": 0
+  },
+  "fac_and_power": {
+    "fac_to_gravity_ratio_active_median": 0.24260243138646626,
+    "fac_to_gravity_ratio_active_maximum": 0.2427647805699861,
+    "maximum_abs_surface_fac_a_m2": 8.794075638659884e-09,
+    "maximum_abs_net_surface_current_a": 6.776263578034403e-14,
+    "net_surface_current_to_max_domain_current_ratio": 7.736658183565021e-17,
+    "surface_fac_balance": {
+      "evaluable": true,
+      "reason": null,
+      "normalization": "max_abs_times_computational_area_proxy",
+      "normalizations_used": [
+        "max_abs_times_computational_area_proxy"
+      ],
+      "record_count": 60,
+      "maximum_ratio": 7.736658183565021e-17
+    },
+    "maximum_relative_power_pairing_defect": 5.935300506481319e-16,
+    "remote_absorbed_energy_j": 52130.49922214764,
+    "integrated_absolute_ionosphere_port_power_j": 88644.85747986456,
+    "remote_absorption_fraction_of_absolute_port_energy": 0.5880826108157368,
+    "minimum_remote_power_w": 0.0,
+    "maximum_abs_remote_reflection_coefficient": 0.0,
+    "line_energy_budget": {
+      "evaluable": true,
+      "reason": null,
+      "verification_level": "physical_energy_with_sampled_port_quadrature",
+      "characteristic_energy_formula_exact": true,
+      "discrete_ssprk_stage_power_integral_archived": false,
+      "port_work_quadrature": "trapezoidal_representative_stage_samples",
+      "initial_line_energy_j": 0.0,
+      "final_line_energy_j": 36509.49783320201,
+      "line_energy_change_j": 36509.49783320201,
+      "net_boundary_work_j": 36514.386989396444,
+      "remote_absorbed_energy_j": 52130.499222147635,
+      "work_minus_energy_j": 4.889156194432871,
+      "relative_work_minus_energy": 9.37868669470887e-05,
+      "numerical_energy_creation_fraction": 0.0,
+      "numerical_dissipation_fraction": 9.37868669470887e-05,
+      "sample_count_including_t0": 61
+    }
+  },
+  "growth": {
+    "local_es": {
+      "archived_fit_window": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": -0.0004244204163548361,
+        "r_squared": 0.9966199003910151
+      },
+      "late_100s_fit": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": -0.0004244204163548361,
+        "r_squared": 0.9966199003910151
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 60.0,
+        "minimum_amplitude_m3": 39056911154.57818,
+        "final_amplitude_m3": 39056911154.57818,
+        "final_to_minimum_amplitude": 1.0,
+        "window": {
+          "sample_count": 1,
+          "start_s": 60.0,
+          "end_s": 60.0,
+          "duration_s": 0.0,
+          "rate_s_inv": null,
+          "r_squared": null
+        }
+      }
+    },
+    "column_es": {
+      "archived_fit_window": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.00040387601052700137,
+        "r_squared": 0.9999804415633258
+      },
+      "late_100s_fit": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.00040387601052700137,
+        "r_squared": 0.9999804415633258
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 0.0,
+        "minimum_amplitude_m3": 40066735464.423225,
+        "final_amplitude_m3": 41049504287.86429,
+        "final_to_minimum_amplitude": 1.024528297902226,
+        "window": {
+          "sample_count": 241,
+          "start_s": 0.0,
+          "end_s": 60.0,
+          "duration_s": 60.0,
+          "rate_s_inv": 0.00040387601052700137,
+          "r_squared": 0.9999804415633258
+        }
+      }
+    },
+    "column_em": {
+      "archived_fit_window": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.0003122592451961115,
+        "r_squared": 0.9986667810681905
+      },
+      "late_100s_fit": {
+        "sample_count": 241,
+        "start_s": 0.0,
+        "end_s": 60.0,
+        "duration_s": 60.0,
+        "rate_s_inv": 0.0003122592451961115,
+        "r_squared": 0.9986667810681905
+      },
+      "post_minimum_positive_growth": {
+        "minimum_time_s": 0.0,
+        "minimum_amplitude_m3": 40066735464.423225,
+        "final_amplitude_m3": 40845806952.7782,
+        "final_to_minimum_amplitude": 1.0194443465214864,
+        "window": {
+          "sample_count": 241,
+          "start_s": 0.0,
+          "end_s": 60.0,
+          "duration_s": 60.0,
+          "rate_s_inv": 0.0003122592451961115,
+          "r_squared": 0.9986667810681905
+        }
+      }
+    }
+  },
+  "grid": {
+    "nx_archived": 200,
+    "ny": 401,
+    "nx_unique": 200,
+    "dx_km": 1.25,
+    "dy_km": 1.0,
+    "periodic_endpoint_duplicate_removed": false,
+    "periodic_x_layout": "unique_periodic_cells",
+    "computational_period_x_km": 250.0,
+    "periodic_endpoint_relative_mismatch": {
+      "local_es": null,
+      "column_es": null,
+      "column_em": null
+    }
+  },
+  "visual_qa": {
+    "done": true,
+    "image": "<ORIGINAL_CHECKOUT>\\output\\em_growth\\unique_periodic_200x401_k8_three_track_20261006\\postprocess_t60\\em_growth_comparison.png",
+    "finding": "All three tracks show smooth early perturbations with no resolved D>=0.25 bubble or Y bifurcation; column EM growth smaller than column ES; no obvious seams or rendering defects."
+  },
+  "diagnostics": {
+    "count": 60,
+    "last_time_s": 60,
+    "strictly_increasing": true
+  },
+  "next_action": "Recommend archiving this 60 s result and extending the same new hash checkpoint to 300 s only after user choice. No new extension launched. Preserve old failed f7 trajectory and all coarse outputs.",
+  "limitations": "Early-stage validation only. Sampled-power quadrature, not exact SSPRK stage work. Open vertical particle budget lacks flux history. No mature-grid convergence or Y-bifurcation claim."
+}

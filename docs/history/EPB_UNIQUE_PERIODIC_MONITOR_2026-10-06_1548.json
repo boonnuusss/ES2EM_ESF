@@ -1,0 +1,28 @@
+{
+  "checked_at_local": "2026-10-06 15:48 Asia/Shanghai",
+  "result": "running_stable",
+  "active_process": {
+    "pid": 16656,
+    "command": "python.exe -u <ORIGINAL_CHECKOUT>/tmp/run_em_unique_periodic_t300_20261006.py"
+  },
+  "checkpoint": {
+    "time_s": 150.0,
+    "step": 600,
+    "schema_version": 3,
+    "configuration_hash": "28c1470354b3f7bb60a6129ba29566fb2d6bbe937aba3426fd5b703a0b357fa1",
+    "all_float_arrays_finite": true,
+    "all_three_densities_positive": true
+  },
+  "diagnostics_latest_time_s": 158.0,
+  "maxima": {
+    "coupling_relative_residual": 6.741122801418597e-13,
+    "relative_power_pairing_defect": 6.229694802745221e-16,
+    "baseline_cfl": 0.016042884166050264,
+    "column_control_cfl": 0.002661354557734652,
+    "coupled_cfl": 0.4,
+    "dt_reductions": 0
+  },
+  "stderr_empty": true,
+  "acceptance_t300_exists": false,
+  "next_action": "Continue existing sole driver to300 s; no duplicate launch. Next check at or after16:18. Terminal audit/acceptance/visual QA pending."
+}
